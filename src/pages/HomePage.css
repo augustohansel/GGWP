@@ -1,0 +1,265 @@
+/* src/pages/HomePage.css */
+.home-wrapper {
+  background-color: #f3ecd8; /* Cor creme do fundo */
+  color: #111111;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  padding: 40px 5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- HEADER NAV --- */
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.home-nav-tag {
+  color: #555;
+}
+
+.home-nav-buttons button {
+  background: transparent;
+  border: 1px solid #111;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.2s;
+}
+
+.home-nav-buttons button:hover {
+  background: #111;
+  color: #f3ecd8;
+}
+
+/* --- HERO SECTION (2 Colunas) --- */
+.home-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex: 1;
+}
+
+.hero-left {
+  flex: 1;
+  max-width: 600px;
+}
+
+.big-score {
+  font-family: 'Anton', sans-serif;
+  font-size: 180px;
+  line-height: 0.8;
+  margin: 0;
+  color: #111;
+  text-shadow: 6px 6px 0px #cda252;  
+  margin-bottom: 20px;
+  letter-spacing: -2px;
+  text-align: left;
+}
+
+.hero-title {
+  font-family: 'Anton', sans-serif;
+  color: #111111;
+  font-size: 55px;
+  line-height: 1.1;
+  margin: 0 0 20px 0;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+.hero-desc {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 40px;
+  max-width: 450px;
+  text-align: left;
+}
+
+/* BOTOES DA HERO */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn-play {
+  background-color: #e23b2d; 
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 20px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px #111; 
+  transition: transform 0.1s;
+}
+
+.btn-play:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px #111;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #111;
+  border: 2px solid #111;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 4px 4px 0px #111;
+  transition: transform 0.1s;
+}
+
+.btn-secondary:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px #111;
+}
+
+.badge-novo {
+  position: absolute;
+  top: -12px;
+  right: -10px;
+  background-color: #cda252;
+  font-size: 10px;
+  padding: 4px 8px;
+  font-weight: 800;
+  border: 1px solid #111;
+}
+
+/* --- HERO RIGHT (O QUADRO TÁTICO) --- */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tactical-board {
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  border: 3px solid #111;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 8px 8px 0px rgba(0,0,0,0.1);
+  overflow: hidden;
+  background-color: #1a1a1a; 
+  background-image: 
+    linear-gradient(rgba(0, 255, 136, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 136, 0.15) 1px, transparent 1px),
+    linear-gradient(rgba(20, 25, 20, 0.1), rgba(20, 25, 20, 0.1)),
+    url('../assets/radar-bg.webp');
+  
+  background-size: 40px 40px, 40px 40px, cover, 200%;
+  
+  background-position: 0 0, 0 0, center, center;
+}
+
+.player-node {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease-in-out;
+  cursor: default;
+}
+
+.player-node:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.node-circle {
+  width: 35px;
+  height: 35px;
+  background: white;
+  border: 3px solid #e23b2d; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 11px;
+  color: #111;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.node-name {
+  color: white;
+  background: #111;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 6px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* --- STEPS CARD --- */
+.steps-card {
+  background: white;
+  border: 2px solid #111;
+  display: flex;
+  box-shadow: 6px 6px 0px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.step-item {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-right: 1px solid #ddd;
+}
+
+.step-item:last-child {
+  border-right: none;
+}
+
+.step-number {
+  color: #e23b2d;
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+}
+
+.step-text h4 {
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.step-text p {
+  margin: 5px 0 0 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* --- FOOTER --- */
+.home-footer {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+  font-weight: 600;
+}
+
+.home-footer a {
+  color: #555;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
