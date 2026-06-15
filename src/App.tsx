@@ -1,5 +1,4 @@
-// src/App.tsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { HomePage } from './pages/HomePage';
 import { DraftPage } from './pages/DraftPage';
 import { TournamentPage } from './pages/TournamentPage';
