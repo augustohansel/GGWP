@@ -3628,6 +3628,3306 @@
         { "id": 840, "team_id": 168, "nickname": "floppy", "real_name": "Ricky Kemery", "nationality": "US", "role": "Rifler", "attributes": { "aim": 88, "awp": 45, "brain": 86, "clutch": 86, "entry": 86, "utility": 84, "movement": 86 }, "overall": 87 },
         { "id": 841, "team_id": 168, "nickname": "Grim", "real_name": "Michael Wince", "nationality": "US", "role": "Entry Fragger", "attributes": { "aim": 88, "awp": 40, "brain": 84, "clutch": 84, "entry": 88, "utility": 82, "movement": 86 }, "overall": 86 }
       ]
+    },
+    {
+  "id": 169,
+  "name": "Team Spirit",
+  "year": 2024,
+  "cs_version": "CS2",
+  "country": "RU",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 842,
+      "team_id": 169,
+      "nickname": "chopper",
+      "real_name": "Leonid Vishnyakov",
+      "nationality": "RU",
+      "role": "IGL",
+      "attributes": {
+        "aim": 82,
+        "awp": 35,
+        "brain": 96,
+        "clutch": 85,
+        "entry": 78,
+        "utility": 94,
+        "movement": 81
+      },
+      "overall": 86
+    },
+    {
+      "id": 843,
+      "team_id": 169,
+      "nickname": "magixx",
+      "real_name": "Boris Vorobyev",
+      "nationality": "RU",
+      "role": "Support Rifler",
+      "attributes": {
+        "aim": 88,
+        "awp": 35,
+        "brain": 88,
+        "clutch": 86,
+        "entry": 84,
+        "utility": 90,
+        "movement": 87
+      },
+      "overall": 88
+    },
+    {
+      "id": 844,
+      "team_id": 169,
+      "nickname": "zont1x",
+      "real_name": "Myroslav Plakhotia",
+      "nationality": "UA",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 91,
+        "awp": 40,
+        "brain": 90,
+        "clutch": 90,
+        "entry": 89,
+        "utility": 89,
+        "movement": 89
+      },
+      "overall": 91
+    },
+    {
+      "id": 845,
+      "team_id": 169,
+      "nickname": "donk",
+      "real_name": "Danil Kryshkovets",
+      "nationality": "RU",
+      "role": "Star Player / Entry Fragger",
+      "attributes": {
+        "aim": 100,
+        "awp": 55,
+        "brain": 96,
+        "clutch": 96,
+        "entry": 100,
+        "utility": 91,
+        "movement": 99
+      },
+      "overall": 99
+    },
+    {
+      "id": 846,
+      "team_id": 169,
+      "nickname": "sh1ro",
+      "real_name": "Dmitriy Sokolov",
+      "nationality": "RU",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 96,
+        "awp": 99,
+        "brain": 96,
+        "clutch": 97,
+        "entry": 76,
+        "utility": 91,
+        "movement": 91
+      },
+      "overall": 97
     }
+  ]
+},
+{
+  "id": 170,
+  "name": "FaZe Clan",
+  "year": 2024,
+  "cs_version": "CS2",
+  "country": "EU",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 847,
+      "team_id": 170,
+      "nickname": "rain",
+      "real_name": "Håvard Nygaard",
+      "nationality": "NO",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 91,
+        "awp": 35,
+        "brain": 90,
+        "clutch": 89,
+        "entry": 95,
+        "utility": 88,
+        "movement": 89
+      },
+      "overall": 92
+    },
+    {
+      "id": 848,
+      "team_id": 170,
+      "nickname": "broky",
+      "real_name": "Helvijs Saukants",
+      "nationality": "LV",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 93,
+        "awp": 96,
+        "brain": 91,
+        "clutch": 95,
+        "entry": 78,
+        "utility": 88,
+        "movement": 89
+      },
+      "overall": 94
+    },
+    {
+      "id": 849,
+      "team_id": 170,
+      "nickname": "karrigan",
+      "real_name": "Finn Andersen",
+      "nationality": "DK",
+      "role": "IGL",
+      "attributes": {
+        "aim": 78,
+        "awp": 30,
+        "brain": 99,
+        "clutch": 86,
+        "entry": 72,
+        "utility": 96,
+        "movement": 80
+      },
+      "overall": 87
+    },
+    {
+      "id": 850,
+      "team_id": 170,
+      "nickname": "ropz",
+      "real_name": "Robin Kool",
+      "nationality": "EE",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 95,
+        "awp": 45,
+        "brain": 97,
+        "clutch": 98,
+        "entry": 88,
+        "utility": 92,
+        "movement": 94
+      },
+      "overall": 96
+    },
+    {
+      "id": 851,
+      "team_id": 170,
+      "nickname": "frozen",
+      "real_name": "David Čerňanský",
+      "nationality": "SK",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 93,
+        "awp": 40,
+        "brain": 91,
+        "clutch": 91,
+        "entry": 90,
+        "utility": 89,
+        "movement": 90
+      },
+      "overall": 92
+    }
+  ]
+},
+{
+  "id": 171,
+  "name": "G2 Esports",
+  "year": 2024,
+  "cs_version": "CS2",
+  "country": "EU",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 852,
+      "team_id": 171,
+      "nickname": "Snax",
+      "real_name": "Janusz Pogorzelski",
+      "nationality": "PL",
+      "role": "IGL",
+      "attributes": {
+        "aim": 81,
+        "awp": 35,
+        "brain": 94,
+        "clutch": 88,
+        "entry": 74,
+        "utility": 92,
+        "movement": 80
+      },
+      "overall": 85
+    },
+    {
+      "id": 853,
+      "team_id": 171,
+      "nickname": "huNter-",
+      "real_name": "Nemanja Kovač",
+      "nationality": "BA",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 92,
+        "awp": 40,
+        "brain": 91,
+        "clutch": 91,
+        "entry": 89,
+        "utility": 89,
+        "movement": 90
+      },
+      "overall": 92
+    },
+    {
+      "id": 854,
+      "team_id": 171,
+      "nickname": "NiKo",
+      "real_name": "Nikola Kovač",
+      "nationality": "BA",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 99,
+        "awp": 55,
+        "brain": 96,
+        "clutch": 95,
+        "entry": 97,
+        "utility": 92,
+        "movement": 95
+      },
+      "overall": 98
+    },
+    {
+      "id": 855,
+      "team_id": 171,
+      "nickname": "m0NESY",
+      "real_name": "Ilya Osipov",
+      "nationality": "RU",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 98,
+        "awp": 99,
+        "brain": 94,
+        "clutch": 95,
+        "entry": 85,
+        "utility": 88,
+        "movement": 98
+      },
+      "overall": 98
+    },
+    {
+      "id": 856,
+      "team_id": 171,
+      "nickname": "malbsMd",
+      "real_name": "Mario Samayoa",
+      "nationality": "GT",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 91,
+        "awp": 35,
+        "brain": 84,
+        "clutch": 84,
+        "entry": 94,
+        "utility": 82,
+        "movement": 91
+      },
+      "overall": 89
+    }
+  ]
+},
+{
+  "id": 172,
+  "name": "MOUZ",
+  "year": 2024,
+  "cs_version": "CS2",
+  "country": "DE",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 857,
+      "team_id": 172,
+      "nickname": "Brollan",
+      "real_name": "Ludvig Brolin",
+      "nationality": "SE",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 91,
+        "awp": 35,
+        "brain": 88,
+        "clutch": 87,
+        "entry": 94,
+        "utility": 86,
+        "movement": 90
+      },
+      "overall": 91
+    },
+    {
+      "id": 858,
+      "team_id": 172,
+      "nickname": "torzsi",
+      "real_name": "Ádám Torzsás",
+      "nationality": "HU",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 93,
+        "awp": 95,
+        "brain": 89,
+        "clutch": 90,
+        "entry": 80,
+        "utility": 85,
+        "movement": 92
+      },
+      "overall": 93
+    },
+    {
+      "id": 859,
+      "team_id": 172,
+      "nickname": "siuhy",
+      "real_name": "Kamil Szkaradek",
+      "nationality": "PL",
+      "role": "IGL",
+      "attributes": {
+        "aim": 82,
+        "awp": 30,
+        "brain": 96,
+        "clutch": 86,
+        "entry": 77,
+        "utility": 94,
+        "movement": 82
+      },
+      "overall": 87
+    },
+    {
+      "id": 860,
+      "team_id": 172,
+      "nickname": "xertioN",
+      "real_name": "Dorian Berman",
+      "nationality": "IL",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 95,
+        "awp": 40,
+        "brain": 90,
+        "clutch": 89,
+        "entry": 95,
+        "utility": 87,
+        "movement": 94
+      },
+      "overall": 94
+    },
+    {
+      "id": 861,
+      "team_id": 172,
+      "nickname": "Jimpphat",
+      "real_name": "Jimi Salo",
+      "nationality": "FI",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 91,
+        "awp": 35,
+        "brain": 90,
+        "clutch": 90,
+        "entry": 87,
+        "utility": 89,
+        "movement": 89
+      },
+      "overall": 91
+    }
+  ]
+},
+{
+  "id": 173,
+  "name": "Team Vitality",
+  "year": 2024,
+  "cs_version": "CS2",
+  "country": "FR",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 862,
+      "team_id": 173,
+      "nickname": "apEX",
+      "real_name": "Dan Madesclaire",
+      "nationality": "FR",
+      "role": "IGL",
+      "attributes": {
+        "aim": 84,
+        "awp": 30,
+        "brain": 97,
+        "clutch": 87,
+        "entry": 82,
+        "utility": 95,
+        "movement": 84
+      },
+      "overall": 88
+    },
+    {
+      "id": 863,
+      "team_id": 173,
+      "nickname": "ZywOo",
+      "real_name": "Mathieu Herbaut",
+      "nationality": "FR",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 99,
+        "awp": 100,
+        "brain": 98,
+        "clutch": 99,
+        "entry": 90,
+        "utility": 94,
+        "movement": 98
+      },
+      "overall": 99
+    },
+    {
+      "id": 864,
+      "team_id": 173,
+      "nickname": "flameZ",
+      "real_name": "Shahar Shushan",
+      "nationality": "IL",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 93,
+        "awp": 35,
+        "brain": 87,
+        "clutch": 86,
+        "entry": 96,
+        "utility": 85,
+        "movement": 94
+      },
+      "overall": 92
+    },
+    {
+      "id": 865,
+      "team_id": 173,
+      "nickname": "Spinx",
+      "real_name": "Lotan Giladi",
+      "nationality": "IL",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 95,
+        "awp": 40,
+        "brain": 92,
+        "clutch": 92,
+        "entry": 91,
+        "utility": 90,
+        "movement": 92
+      },
+      "overall": 94
+    },
+    {
+      "id": 866,
+      "team_id": 173,
+      "nickname": "mezii",
+      "real_name": "William Merriman",
+      "nationality": "GB",
+      "role": "Support Rifler",
+      "attributes": {
+        "aim": 88,
+        "awp": 35,
+        "brain": 89,
+        "clutch": 88,
+        "entry": 84,
+        "utility": 91,
+        "movement": 87
+      },
+      "overall": 89
+    }
+  ]
+},
+{
+  "id": 174,
+  "name": "Team Liquid",
+  "year": 2024,
+  "cs_version": "CS2",
+  "country": "US",
+  "team_tier": "A",
+  "roster": [
+    {
+      "id": 867,
+      "team_id": 174,
+      "nickname": "Twistzz",
+      "real_name": "Russel Van Dulken",
+      "nationality": "CA",
+      "role": "IGL",
+      "attributes": {
+        "aim": 94,
+        "awp": 40,
+        "brain": 91,
+        "clutch": 93,
+        "entry": 88,
+        "utility": 91,
+        "movement": 92
+      },
+      "overall": 94
+    },
+    {
+      "id": 868,
+      "team_id": 174,
+      "nickname": "NAF",
+      "real_name": "Keith Markovic",
+      "nationality": "CA",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 93,
+        "awp": 55,
+        "brain": 95,
+        "clutch": 96,
+        "entry": 84,
+        "utility": 92,
+        "movement": 89
+      },
+      "overall": 94
+    },
+    {
+      "id": 869,
+      "team_id": 174,
+      "nickname": "ultimate",
+      "real_name": "Roland Tomkowiak",
+      "nationality": "PL",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 90,
+        "awp": 93,
+        "brain": 84,
+        "clutch": 86,
+        "entry": 82,
+        "utility": 80,
+        "movement": 89
+      },
+      "overall": 89
+    },
+    {
+      "id": 870,
+      "team_id": 174,
+      "nickname": "jks",
+      "real_name": "Justin Savage",
+      "nationality": "AU",
+      "role": "Support Rifler",
+      "attributes": {
+        "aim": 89,
+        "awp": 35,
+        "brain": 92,
+        "clutch": 92,
+        "entry": 82,
+        "utility": 91,
+        "movement": 86
+      },
+      "overall": 90
+    },
+    {
+      "id": 871,
+      "team_id": 174,
+      "nickname": "YEKINDAR",
+      "real_name": "Mareks Gaļinskis",
+      "nationality": "LV",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 91,
+        "awp": 30,
+        "brain": 82,
+        "clutch": 80,
+        "entry": 95,
+        "utility": 79,
+        "movement": 93
+      },
+      "overall": 88
+    }
+  ]
+},
+{
+  "id": 175,
+  "name": "HEROIC",
+  "year": 2024,
+  "cs_version": "CS2",
+  "country": "NO",
+  "team_tier": "A",
+  "roster": [
+    {
+      "id": 872,
+      "team_id": 175,
+      "nickname": "TeSeS",
+      "real_name": "René Madsen",
+      "nationality": "DK",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 91,
+        "awp": 30,
+        "brain": 86,
+        "clutch": 85,
+        "entry": 94,
+        "utility": 84,
+        "movement": 90
+      },
+      "overall": 89
+    },
+    {
+      "id": 873,
+      "team_id": 175,
+      "nickname": "sjuush",
+      "real_name": "Rasmus Beck",
+      "nationality": "DK",
+      "role": "Support Rifler",
+      "attributes": {
+        "aim": 88,
+        "awp": 30,
+        "brain": 91,
+        "clutch": 90,
+        "entry": 82,
+        "utility": 92,
+        "movement": 86
+      },
+      "overall": 89
+    },
+    {
+      "id": 874,
+      "team_id": 175,
+      "nickname": "NertZ",
+      "real_name": "Guy Iluz",
+      "nationality": "IL",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 95,
+        "awp": 35,
+        "brain": 89,
+        "clutch": 91,
+        "entry": 93,
+        "utility": 87,
+        "movement": 93
+      },
+      "overall": 94
+    },
+    {
+      "id": 875,
+      "team_id": 175,
+      "nickname": "kyxsan",
+      "real_name": "Damjan Stoilkovski",
+      "nationality": "MK",
+      "role": "IGL",
+      "attributes": {
+        "aim": 81,
+        "awp": 30,
+        "brain": 95,
+        "clutch": 84,
+        "entry": 76,
+        "utility": 94,
+        "movement": 80
+      },
+      "overall": 86
+    },
+    {
+      "id": 876,
+      "team_id": 175,
+      "nickname": "degster",
+      "real_name": "Abdul Gasanov",
+      "nationality": "RU",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 94,
+        "awp": 96,
+        "brain": 88,
+        "clutch": 92,
+        "entry": 80,
+        "utility": 84,
+        "movement": 91
+      },
+      "overall": 94
+    }
+  ]
+},
+{
+  "id": 176,
+  "name": "The MongolZ",
+  "year": 2024,
+  "cs_version": "CS2",
+  "country": "MN",
+  "team_tier": "A",
+  "roster": [
+    {
+      "id": 877,
+      "team_id": 176,
+      "nickname": "bLitz",
+      "real_name": "Garidmagnai Byambasuren",
+      "nationality": "MN",
+      "role": "IGL",
+      "attributes": {
+        "aim": 84,
+        "awp": 30,
+        "brain": 95,
+        "clutch": 87,
+        "entry": 80,
+        "utility": 94,
+        "movement": 84
+      },
+      "overall": 88
+    },
+    {
+      "id": 878,
+      "team_id": 176,
+      "nickname": "Techno",
+      "real_name": "Sodbayar Munkhbold",
+      "nationality": "MN",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 89,
+        "awp": 35,
+        "brain": 87,
+        "clutch": 87,
+        "entry": 88,
+        "utility": 85,
+        "movement": 89
+      },
+      "overall": 89
+    },
+    {
+      "id": 879,
+      "team_id": 176,
+      "nickname": "Senzu",
+      "real_name": "Munkhbold Azbayar",
+      "nationality": "MN",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 95,
+        "awp": 45,
+        "brain": 89,
+        "clutch": 91,
+        "entry": 94,
+        "utility": 85,
+        "movement": 95
+      },
+      "overall": 94
+    },
+    {
+      "id": 880,
+      "team_id": 176,
+      "nickname": "mzinho",
+      "real_name": "Ayush Batbold",
+      "nationality": "MN",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 92,
+        "awp": 95,
+        "brain": 87,
+        "clutch": 90,
+        "entry": 84,
+        "utility": 82,
+        "movement": 92
+      },
+      "overall": 92
+    },
+    {
+      "id": 881,
+      "team_id": 176,
+      "nickname": "910",
+      "real_name": "Usukhbayar Banzragch",
+      "nationality": "MN",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 91,
+        "awp": 40,
+        "brain": 84,
+        "clutch": 84,
+        "entry": 95,
+        "utility": 80,
+        "movement": 93
+      },
+      "overall": 89
+    }
+  ]
+},
+{
+  "id": 177,
+  "name": "Team Spirit",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "RU",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 882,
+      "team_id": 177,
+      "nickname": "chopper",
+      "real_name": "Leonid Vishnyakov",
+      "nationality": "RU",
+      "role": "IGL",
+      "attributes": {
+        "aim": 83,
+        "awp": 35,
+        "brain": 97,
+        "clutch": 86,
+        "entry": 78,
+        "utility": 95,
+        "movement": 82
+      },
+      "overall": 87
+    },
+    {
+      "id": 883,
+      "team_id": 177,
+      "nickname": "magixx",
+      "real_name": "Boris Vorobyev",
+      "nationality": "RU",
+      "role": "Support Rifler",
+      "attributes": {
+        "aim": 89,
+        "awp": 35,
+        "brain": 89,
+        "clutch": 88,
+        "entry": 85,
+        "utility": 91,
+        "movement": 88
+      },
+      "overall": 89
+    },
+    {
+      "id": 884,
+      "team_id": 177,
+      "nickname": "zont1x",
+      "real_name": "Myroslav Plakhotia",
+      "nationality": "UA",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 92,
+        "awp": 40,
+        "brain": 91,
+        "clutch": 91,
+        "entry": 90,
+        "utility": 90,
+        "movement": 90
+      },
+      "overall": 92
+    },
+    {
+      "id": 885,
+      "team_id": 177,
+      "nickname": "donk",
+      "real_name": "Danil Kryshkovets",
+      "nationality": "RU",
+      "role": "Star Player / Entry Fragger",
+      "attributes": {
+        "aim": 100,
+        "awp": 60,
+        "brain": 97,
+        "clutch": 97,
+        "entry": 100,
+        "utility": 92,
+        "movement": 100
+      },
+      "overall": 99
+    },
+    {
+      "id": 886,
+      "team_id": 177,
+      "nickname": "sh1ro",
+      "real_name": "Dmitriy Sokolov",
+      "nationality": "RU",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 97,
+        "awp": 99,
+        "brain": 97,
+        "clutch": 98,
+        "entry": 78,
+        "utility": 92,
+        "movement": 92
+      },
+      "overall": 97
+    }
+  ]
+},
+{
+  "id": 178,
+  "name": "FURIA",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "BR",
+  "team_tier": "A",
+  "roster": [
+    {
+      "id": 887,
+      "team_id": 178,
+      "nickname": "FalleN",
+      "real_name": "Gabriel Toledo",
+      "nationality": "BR",
+      "role": "IGL",
+      "attributes": {
+        "aim": 84,
+        "awp": 75,
+        "brain": 98,
+        "clutch": 91,
+        "entry": 70,
+        "utility": 96,
+        "movement": 80
+      },
+      "overall": 90
+    },
+    {
+      "id": 888,
+      "team_id": 178,
+      "nickname": "KSCERATO",
+      "real_name": "Kaike Cerato",
+      "nationality": "BR",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 96,
+        "awp": 40,
+        "brain": 95,
+        "clutch": 96,
+        "entry": 88,
+        "utility": 93,
+        "movement": 92
+      },
+      "overall": 95
+    },
+    {
+      "id": 889,
+      "team_id": 178,
+      "nickname": "yuurih",
+      "real_name": "Yuri Santos",
+      "nationality": "BR",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 95,
+        "awp": 35,
+        "brain": 92,
+        "clutch": 92,
+        "entry": 91,
+        "utility": 91,
+        "movement": 92
+      },
+      "overall": 94
+    },
+    {
+      "id": 890,
+      "team_id": 178,
+      "nickname": "YEKINDAR",
+      "real_name": "Mareks Gaļinskis",
+      "nationality": "LV",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 94,
+        "awp": 35,
+        "brain": 87,
+        "clutch": 87,
+        "entry": 99,
+        "utility": 84,
+        "movement": 96
+      },
+      "overall": 93
+    },
+    {
+      "id": 891,
+      "team_id": 178,
+      "nickname": "molodoy",
+      "real_name": "Danil Golubenko",
+      "nationality": "KZ",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 92,
+        "awp": 95,
+        "brain": 84,
+        "clutch": 88,
+        "entry": 82,
+        "utility": 79,
+        "movement": 91
+      },
+      "overall": 91
+    }
+  ]
+},
+{
+  "id": 179,
+  "name": "FaZe Clan",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "EU",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 892,
+      "team_id": 179,
+      "nickname": "karrigan",
+      "real_name": "Finn Andersen",
+      "nationality": "DK",
+      "role": "IGL",
+      "attributes": {
+        "aim": 79,
+        "awp": 30,
+        "brain": 99,
+        "clutch": 87,
+        "entry": 73,
+        "utility": 97,
+        "movement": 81
+      },
+      "overall": 88
+    },
+    {
+      "id": 893,
+      "team_id": 179,
+      "nickname": "rain",
+      "real_name": "Håvard Nygaard",
+      "nationality": "NO",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 92,
+        "awp": 35,
+        "brain": 91,
+        "clutch": 90,
+        "entry": 96,
+        "utility": 89,
+        "movement": 90
+      },
+      "overall": 92
+    },
+    {
+      "id": 894,
+      "team_id": 179,
+      "nickname": "frozen",
+      "real_name": "David Čerňanský",
+      "nationality": "SK",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 94,
+        "awp": 40,
+        "brain": 92,
+        "clutch": 92,
+        "entry": 91,
+        "utility": 90,
+        "movement": 91
+      },
+      "overall": 93
+    },
+    {
+      "id": 895,
+      "team_id": 179,
+      "nickname": "EliGE",
+      "real_name": "Jonathan Jablonowski",
+      "nationality": "US",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 98,
+        "awp": 40,
+        "brain": 92,
+        "clutch": 93,
+        "entry": 97,
+        "utility": 88,
+        "movement": 93
+      },
+      "overall": 96
+    },
+    {
+      "id": 896,
+      "team_id": 179,
+      "nickname": "s1mple",
+      "real_name": "Oleksandr Kostyliev",
+      "nationality": "UA",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 90,
+        "awp": 93,
+        "brain": 90,
+        "clutch": 95,
+        "entry": 88,
+        "utility": 87,
+        "movement": 94
+      },
+      "overall": 94
+    }
+  ]
+},
+{
+  "id": 180,
+  "name": "Team Vitality",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "FR",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 897,
+      "team_id": 180,
+      "nickname": "apEX",
+      "real_name": "Dan Madesclaire",
+      "nationality": "FR",
+      "role": "IGL",
+      "attributes": {
+        "aim": 85,
+        "awp": 30,
+        "brain": 98,
+        "clutch": 88,
+        "entry": 83,
+        "utility": 96,
+        "movement": 84
+      },
+      "overall": 89
+    },
+    {
+      "id": 898,
+      "team_id": 180,
+      "nickname": "ZywOo",
+      "real_name": "Mathieu Herbaut",
+      "nationality": "FR",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 100,
+        "awp": 100,
+        "brain": 99,
+        "clutch": 100,
+        "entry": 91,
+        "utility": 95,
+        "movement": 99
+      },
+      "overall": 99
+    },
+    {
+      "id": 899,
+      "team_id": 180,
+      "nickname": "flameZ",
+      "real_name": "Shahar Shushan",
+      "nationality": "IL",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 94,
+        "awp": 35,
+        "brain": 88,
+        "clutch": 87,
+        "entry": 97,
+        "utility": 86,
+        "movement": 95
+      },
+      "overall": 93
+    },
+    {
+      "id": 900,
+      "team_id": 180,
+      "nickname": "ropz",
+      "real_name": "Robin Kool",
+      "nationality": "EE",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 97,
+        "awp": 45,
+        "brain": 98,
+        "clutch": 99,
+        "entry": 90,
+        "utility": 94,
+        "movement": 95
+      },
+      "overall": 97
+    },
+    {
+      "id": 901,
+      "team_id": 180,
+      "nickname": "mezii",
+      "real_name": "William Merriman",
+      "nationality": "GB",
+      "role": "Support Rifler",
+      "attributes": {
+        "aim": 89,
+        "awp": 35,
+        "brain": 90,
+        "clutch": 89,
+        "entry": 85,
+        "utility": 92,
+        "movement": 88
+      },
+      "overall": 90
+    }
+  ]
+},
+{
+  "id": 181,
+  "name": "Natus Vincere",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "UA",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 902,
+      "team_id": 181,
+      "nickname": "Aleksib",
+      "real_name": "Aleksi Virolainen",
+      "nationality": "FI",
+      "role": "IGL",
+      "attributes": {
+        "aim": 82,
+        "awp": 30,
+        "brain": 97,
+        "clutch": 86,
+        "entry": 76,
+        "utility": 96,
+        "movement": 82
+      },
+      "overall": 87
+    },
+    {
+      "id": 903,
+      "team_id": 181,
+      "nickname": "jL",
+      "real_name": "Justinas Lekavicius",
+      "nationality": "LT",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 93,
+        "awp": 35,
+        "brain": 89,
+        "clutch": 90,
+        "entry": 96,
+        "utility": 87,
+        "movement": 93
+      },
+      "overall": 92
+    },
+    {
+      "id": 904,
+      "team_id": 181,
+      "nickname": "b1t",
+      "real_name": "Valeriy Vakhovskiy",
+      "nationality": "UA",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 97,
+        "awp": 40,
+        "brain": 94,
+        "clutch": 95,
+        "entry": 94,
+        "utility": 92,
+        "movement": 95
+      },
+      "overall": 96
+    },
+    {
+      "id": 905,
+      "team_id": 181,
+      "nickname": "w0nderful",
+      "real_name": "Ihor Zhdanov",
+      "nationality": "UA",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 95,
+        "awp": 97,
+        "brain": 91,
+        "clutch": 94,
+        "entry": 82,
+        "utility": 87,
+        "movement": 93
+      },
+      "overall": 95
+    },
+    {
+      "id": 906,
+      "team_id": 181,
+      "nickname": "iM",
+      "real_name": "Ivan Mihai",
+      "nationality": "RO",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 92,
+        "awp": 35,
+        "brain": 89,
+        "clutch": 89,
+        "entry": 91,
+        "utility": 88,
+        "movement": 91
+      },
+      "overall": 91
+    }
+  ]
+},
+{
+  "id": 182,
+  "name": "MOUZ",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "DE",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 907,
+      "team_id": 182,
+      "nickname": "siuhy",
+      "real_name": "Kamil Szkaradek",
+      "nationality": "PL",
+      "role": "IGL",
+      "attributes": {
+        "aim": 83,
+        "awp": 30,
+        "brain": 97,
+        "clutch": 87,
+        "entry": 78,
+        "utility": 95,
+        "movement": 83
+      },
+      "overall": 88
+    },
+    {
+      "id": 908,
+      "team_id": 182,
+      "nickname": "torzsi",
+      "real_name": "Ádám Torzsás",
+      "nationality": "HU",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 94,
+        "awp": 96,
+        "brain": 90,
+        "clutch": 91,
+        "entry": 81,
+        "utility": 86,
+        "movement": 93
+      },
+      "overall": 94
+    },
+    {
+      "id": 909,
+      "team_id": 182,
+      "nickname": "xertioN",
+      "real_name": "Dorian Berman",
+      "nationality": "IL",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 96,
+        "awp": 40,
+        "brain": 91,
+        "clutch": 90,
+        "entry": 96,
+        "utility": 88,
+        "movement": 95
+      },
+      "overall": 95
+    },
+    {
+      "id": 910,
+      "team_id": 182,
+      "nickname": "Jimpphat",
+      "real_name": "Jimi Salo",
+      "nationality": "FI",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 92,
+        "awp": 35,
+        "brain": 91,
+        "clutch": 91,
+        "entry": 88,
+        "utility": 90,
+        "movement": 90
+      },
+      "overall": 92
+    },
+    {
+      "id": 911,
+      "team_id": 182,
+      "nickname": "Brollan",
+      "real_name": "Ludvig Brolin",
+      "nationality": "SE",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 92,
+        "awp": 35,
+        "brain": 89,
+        "clutch": 88,
+        "entry": 95,
+        "utility": 87,
+        "movement": 91
+      },
+      "overall": 92
+    }
+  ]
+},
+{
+  "id": 183,
+  "name": "The MongolZ",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "MN",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 912,
+      "team_id": 183,
+      "nickname": "bLitz",
+      "real_name": "Garidmagnai Byambasuren",
+      "nationality": "MN",
+      "role": "IGL",
+      "attributes": {
+        "aim": 85,
+        "awp": 30,
+        "brain": 96,
+        "clutch": 88,
+        "entry": 81,
+        "utility": 95,
+        "movement": 85
+      },
+      "overall": 89
+    },
+    {
+      "id": 913,
+      "team_id": 183,
+      "nickname": "Techno",
+      "real_name": "Sodbayar Munkhbold",
+      "nationality": "MN",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 90,
+        "awp": 35,
+        "brain": 88,
+        "clutch": 88,
+        "entry": 89,
+        "utility": 86,
+        "movement": 90
+      },
+      "overall": 90
+    },
+    {
+      "id": 914,
+      "team_id": 183,
+      "nickname": "Senzu",
+      "real_name": "Munkhbold Azbayar",
+      "nationality": "MN",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 97,
+        "awp": 45,
+        "brain": 91,
+        "clutch": 93,
+        "entry": 96,
+        "utility": 87,
+        "movement": 97
+      },
+      "overall": 96
+    },
+    {
+      "id": 915,
+      "team_id": 183,
+      "nickname": "mzinho",
+      "real_name": "Ayush Batbold",
+      "nationality": "MN",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 94,
+        "awp": 97,
+        "brain": 89,
+        "clutch": 92,
+        "entry": 85,
+        "utility": 84,
+        "movement": 94
+      },
+      "overall": 94
+    },
+    {
+      "id": 916,
+      "team_id": 183,
+      "nickname": "910",
+      "real_name": "Usukhbayar Banzragch",
+      "nationality": "MN",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 93,
+        "awp": 40,
+        "brain": 85,
+        "clutch": 85,
+        "entry": 97,
+        "utility": 81,
+        "movement": 95
+      },
+      "overall": 91
+    }
+  ]
+},
+{
+  "id": 184,
+  "name": "paiN Gaming",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "BR",
+  "team_tier": "A",
+  "roster": [
+    {
+      "id": 917,
+      "team_id": 184,
+      "nickname": "biguzera",
+      "real_name": "Rodrigo Bittencourt",
+      "nationality": "BR",
+      "role": "IGL",
+      "attributes": {
+        "aim": 86,
+        "awp": 30,
+        "brain": 95,
+        "clutch": 89,
+        "entry": 82,
+        "utility": 94,
+        "movement": 85
+      },
+      "overall": 90
+    },
+    {
+      "id": 918,
+      "team_id": 184,
+      "nickname": "nqz",
+      "real_name": "Lucas Soares",
+      "nationality": "BR",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 91,
+        "awp": 94,
+        "brain": 86,
+        "clutch": 89,
+        "entry": 80,
+        "utility": 82,
+        "movement": 90
+      },
+      "overall": 91
+    },
+    {
+      "id": 919,
+      "team_id": 184,
+      "nickname": "snow",
+      "real_name": "João Vinicius",
+      "nationality": "BR",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 95,
+        "awp": 35,
+        "brain": 84,
+        "clutch": 84,
+        "entry": 98,
+        "utility": 80,
+        "movement": 96
+      },
+      "overall": 92
+    },
+    {
+      "id": 920,
+      "team_id": 184,
+      "nickname": "dav1deuS",
+      "real_name": "David Tapia",
+      "nationality": "BR",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 89,
+        "awp": 35,
+        "brain": 88,
+        "clutch": 88,
+        "entry": 87,
+        "utility": 88,
+        "movement": 89
+      },
+      "overall": 89
+    },
+    {
+      "id": 921,
+      "team_id": 184,
+      "nickname": "kauez",
+      "real_name": "Kaue Kaschuk",
+      "nationality": "BR",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 90,
+        "awp": 35,
+        "brain": 85,
+        "clutch": 88,
+        "entry": 89,
+        "utility": 88,
+        "movement": 90
+      },
+      "overall": 89
+    }
+  ]
+},
+{
+  "id": 185,
+  "name": "Team Vitality",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "FR",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 922,
+      "team_id": 185,
+      "nickname": "apEX",
+      "real_name": "Dan Madesclaire",
+      "nationality": "FR",
+      "role": "IGL",
+      "attributes": {
+        "aim": 85,
+        "awp": 30,
+        "brain": 98,
+        "clutch": 89,
+        "entry": 83,
+        "utility": 97,
+        "movement": 84
+      },
+      "overall": 89
+    },
+    {
+      "id": 923,
+      "team_id": 185,
+      "nickname": "ZywOo",
+      "real_name": "Mathieu Herbaut",
+      "nationality": "FR",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 100,
+        "awp": 100,
+        "brain": 99,
+        "clutch": 100,
+        "entry": 92,
+        "utility": 95,
+        "movement": 99
+      },
+      "overall": 99
+    },
+    {
+      "id": 924,
+      "team_id": 185,
+      "nickname": "ropz",
+      "real_name": "Robin Kool",
+      "nationality": "EE",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 97,
+        "awp": 45,
+        "brain": 98,
+        "clutch": 99,
+        "entry": 90,
+        "utility": 94,
+        "movement": 95
+      },
+      "overall": 97
+    },
+    {
+      "id": 925,
+      "team_id": 185,
+      "nickname": "flameZ",
+      "real_name": "Shahar Shushan",
+      "nationality": "IL",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 94,
+        "awp": 35,
+        "brain": 89,
+        "clutch": 88,
+        "entry": 97,
+        "utility": 86,
+        "movement": 95
+      },
+      "overall": 93
+    },
+    {
+      "id": 926,
+      "team_id": 185,
+      "nickname": "mezii",
+      "real_name": "William Merriman",
+      "nationality": "GB",
+      "role": "Support Rifler",
+      "attributes": {
+        "aim": 89,
+        "awp": 35,
+        "brain": 90,
+        "clutch": 89,
+        "entry": 85,
+        "utility": 92,
+        "movement": 88
+      },
+      "overall": 90
+    }
+  ]
+},
+{
+  "id": 185,
+  "name": "Team Falcons",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "SA",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 922,
+      "team_id": 185,
+      "nickname": "kyxsan",
+      "real_name": "Damjan Stoilkovski",
+      "nationality": "MK",
+      "role": "IGL",
+      "attributes": {
+        "aim": 84,
+        "awp": 30,
+        "brain": 96,
+        "clutch": 86,
+        "entry": 79,
+        "utility": 95,
+        "movement": 83
+      },
+      "overall": 88
+    },
+    {
+      "id": 923,
+      "team_id": 185,
+      "nickname": "TeSeS",
+      "real_name": "René Madsen",
+      "nationality": "DK",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 92,
+        "awp": 35,
+        "brain": 88,
+        "clutch": 87,
+        "entry": 95,
+        "utility": 86,
+        "movement": 91
+      },
+      "overall": 91
+    },
+    {
+      "id": 924,
+      "team_id": 185,
+      "nickname": "NiKo",
+      "real_name": "Nikola Kovač",
+      "nationality": "BA",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 99,
+        "awp": 55,
+        "brain": 97,
+        "clutch": 96,
+        "entry": 97,
+        "utility": 93,
+        "movement": 96
+      },
+      "overall": 98
+    },
+    {
+      "id": 925,
+      "team_id": 185,
+      "nickname": "m0NESY",
+      "real_name": "Ilya Osipov",
+      "nationality": "RU",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 99,
+        "awp": 100,
+        "brain": 95,
+        "clutch": 96,
+        "entry": 86,
+        "utility": 89,
+        "movement": 99
+      },
+      "overall": 98
+    },
+    {
+      "id": 926,
+      "team_id": 185,
+      "nickname": "kyousuke",
+      "real_name": "Maksim Lukin",
+      "nationality": "RU",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 97,
+        "awp": 35,
+        "brain": 89,
+        "clutch": 90,
+        "entry": 95,
+        "utility": 84,
+        "movement": 98
+      },
+      "overall": 95
+    }
+  ]
+},
+{
+  "id": 186,
+  "name": "Team Vitality",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "FR",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 927,
+      "team_id": 186,
+      "nickname": "apEX",
+      "real_name": "Dan Madesclaire",
+      "nationality": "FR",
+      "role": "IGL",
+      "attributes": {
+        "aim": 85,
+        "awp": 30,
+        "brain": 99,
+        "clutch": 89,
+        "entry": 83,
+        "utility": 98,
+        "movement": 84
+      },
+      "overall": 90
+    },
+    {
+      "id": 928,
+      "team_id": 186,
+      "nickname": "ZywOo",
+      "real_name": "Mathieu Herbaut",
+      "nationality": "FR",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 100,
+        "awp": 100,
+        "brain": 99,
+        "clutch": 100,
+        "entry": 92,
+        "utility": 95,
+        "movement": 99
+      },
+      "overall": 99
+    },
+    {
+      "id": 929,
+      "team_id": 186,
+      "nickname": "ropz",
+      "real_name": "Robin Kool",
+      "nationality": "EE",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 98,
+        "awp": 45,
+        "brain": 98,
+        "clutch": 99,
+        "entry": 91,
+        "utility": 95,
+        "movement": 96
+      },
+      "overall": 98
+    },
+    {
+      "id": 930,
+      "team_id": 186,
+      "nickname": "flameZ",
+      "real_name": "Shahar Shushan",
+      "nationality": "IL",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 95,
+        "awp": 35,
+        "brain": 89,
+        "clutch": 88,
+        "entry": 98,
+        "utility": 86,
+        "movement": 96
+      },
+      "overall": 94
+    },
+    {
+      "id": 931,
+      "team_id": 186,
+      "nickname": "mezii",
+      "real_name": "William Merriman",
+      "nationality": "GB",
+      "role": "Support Rifler",
+      "attributes": {
+        "aim": 90,
+        "awp": 35,
+        "brain": 91,
+        "clutch": 90,
+        "entry": 85,
+        "utility": 93,
+        "movement": 89
+      },
+      "overall": 91
+    }
+  ]
+},
+{
+  "id": 187,
+  "name": "FaZe Clan",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "EU",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 932,
+      "team_id": 187,
+      "nickname": "karrigan",
+      "real_name": "Finn Andersen",
+      "nationality": "DK",
+      "role": "IGL",
+      "attributes": {
+        "aim": 79,
+        "awp": 30,
+        "brain": 99,
+        "clutch": 87,
+        "entry": 73,
+        "utility": 98,
+        "movement": 81
+      },
+      "overall": 88
+    },
+    {
+      "id": 933,
+      "team_id": 187,
+      "nickname": " jcobbb",
+      "real_name": "Jakub Pietruszewski",
+      "nationality": "PO",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 92,
+        "awp": 35,
+        "brain": 92,
+        "clutch": 88,
+        "entry": 89,
+        "utility": 89,
+        "movement": 90
+      },
+      "overall": 92
+    },
+    {
+      "id": 934,
+      "team_id": 187,
+      "nickname": "frozen",
+      "real_name": "David Čerňanský",
+      "nationality": "SK",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 95,
+        "awp": 40,
+        "brain": 93,
+        "clutch": 93,
+        "entry": 91,
+        "utility": 91,
+        "movement": 92
+      },
+      "overall": 94
+    },
+    {
+      "id": 935,
+      "team_id": 187,
+      "nickname": "broky",
+      "real_name": "Helvijs Saukants",
+      "nationality": "LV",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 95,
+        "awp": 97,
+        "brain": 92,
+        "clutch": 95,
+        "entry": 80,
+        "utility": 88,
+        "movement": 92
+      },
+      "overall": 95
+    },
+    {
+      "id": 936,
+      "team_id": 187,
+      "nickname": "Twistzz",
+      "real_name": "Russel Van Dulken",
+      "nationality": "CA",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 96,
+        "awp": 40,
+        "brain": 94,
+        "clutch": 96,
+        "entry": 89,
+        "utility": 93,
+        "movement": 94
+      },
+      "overall": 95
+    }
+  ]
+},
+{
+  "id": 188,
+  "name": "Team Spirit",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "RU",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 937,
+      "team_id": 188,
+      "nickname": "chopper",
+      "real_name": "Leonid Vishnyakov",
+      "nationality": "RU",
+      "role": "IGL",
+      "attributes": {
+        "aim": 83,
+        "awp": 35,
+        "brain": 98,
+        "clutch": 87,
+        "entry": 78,
+        "utility": 96,
+        "movement": 82
+      },
+      "overall": 88
+    },
+    {
+      "id": 938,
+      "team_id": 188,
+      "nickname": "donk",
+      "real_name": "Danil Kryshkovets",
+      "nationality": "RU",
+      "role": "Star Player / Entry Fragger",
+      "attributes": {
+        "aim": 100,
+        "awp": 60,
+        "brain": 98,
+        "clutch": 98,
+        "entry": 100,
+        "utility": 93,
+        "movement": 100
+      },
+      "overall": 99
+    },
+    {
+      "id": 939,
+      "team_id": 188,
+      "nickname": "sh1ro",
+      "real_name": "Dmitriy Sokolov",
+      "nationality": "RU",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 98,
+        "awp": 99,
+        "brain": 98,
+        "clutch": 99,
+        "entry": 78,
+        "utility": 93,
+        "movement": 93
+      },
+      "overall": 98
+    },
+    {
+      "id": 940,
+      "team_id": 188,
+      "nickname": "zweih",
+      "real_name": "Ivan Gogin",
+      "nationality": "RU",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 91,
+        "awp": 35,
+        "brain": 86,
+        "clutch": 87,
+        "entry": 91,
+        "utility": 84,
+        "movement": 91
+      },
+      "overall": 90
+    },
+    {
+      "id": 941,
+      "team_id": 188,
+      "nickname": "tN1R",
+      "real_name": "Aleksandr Kashin",
+      "nationality": "RU",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 92,
+        "awp": 35,
+        "brain": 87,
+        "clutch": 88,
+        "entry": 90,
+        "utility": 85,
+        "movement": 91
+      },
+      "overall": 91
+    }
+  ]
+},
+{
+  "id": 189,
+  "name": "Natus Vincere",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "UA",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 942,
+      "team_id": 189,
+      "nickname": "Aleksib",
+      "real_name": "Aleksi Virolainen",
+      "nationality": "FI",
+      "role": "IGL",
+      "attributes": {
+        "aim": 82,
+        "awp": 30,
+        "brain": 98,
+        "clutch": 87,
+        "entry": 76,
+        "utility": 97,
+        "movement": 82
+      },
+      "overall": 88
+    },
+    {
+      "id": 943,
+      "team_id": 189,
+      "nickname": "b1t",
+      "real_name": "Valeriy Vakhovskiy",
+      "nationality": "UA",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 97,
+        "awp": 40,
+        "brain": 95,
+        "clutch": 95,
+        "entry": 94,
+        "utility": 92,
+        "movement": 95
+      },
+      "overall": 96
+    },
+    {
+      "id": 944,
+      "team_id": 189,
+      "nickname": "w0nderful",
+      "real_name": "Ihor Zhdanov",
+      "nationality": "UA",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 96,
+        "awp": 98,
+        "brain": 92,
+        "clutch": 95,
+        "entry": 82,
+        "utility": 88,
+        "movement": 94
+      },
+      "overall": 96
+    },
+    {
+      "id": 945,
+      "team_id": 189,
+      "nickname": "iM",
+      "real_name": "Ivan Mihai",
+      "nationality": "RO",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 93,
+        "awp": 35,
+        "brain": 89,
+        "clutch": 89,
+        "entry": 95,
+        "utility": 87,
+        "movement": 93
+      },
+      "overall": 92
+    },
+    {
+      "id": 946,
+      "team_id": 189,
+      "nickname": "makazze",
+      "real_name": "Drin Shaqiri",
+      "nationality": "XK",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 94,
+        "awp": 35,
+        "brain": 87,
+        "clutch": 88,
+        "entry": 93,
+        "utility": 84,
+        "movement": 94
+      },
+      "overall": 92
+    }
+  ]
+},
+{
+  "id": 190,
+  "name": "MOUZ",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "DE",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 947,
+      "team_id": 190,
+      "nickname": "Brollan",
+      "real_name": "Ludvig Brolin",
+      "nationality": "SE",
+      "role": "IGL",
+      "attributes": {
+        "aim": 91,
+        "awp": 35,
+        "brain": 95,
+        "clutch": 89,
+        "entry": 93,
+        "utility": 92,
+        "movement": 90
+      },
+      "overall": 92
+    },
+    {
+      "id": 948,
+      "team_id": 190,
+      "nickname": "torzsi",
+      "real_name": "Ádám Torzsás",
+      "nationality": "HU",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 95,
+        "awp": 97,
+        "brain": 91,
+        "clutch": 92,
+        "entry": 81,
+        "utility": 87,
+        "movement": 94
+      },
+      "overall": 95
+    },
+    {
+      "id": 949,
+      "team_id": 190,
+      "nickname": "xertioN",
+      "real_name": "Dorian Berman",
+      "nationality": "IL",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 96,
+        "awp": 40,
+        "brain": 91,
+        "clutch": 90,
+        "entry": 97,
+        "utility": 88,
+        "movement": 95
+      },
+      "overall": 95
+    },
+    {
+      "id": 950,
+      "team_id": 190,
+      "nickname": "Jimpphat",
+      "real_name": "Jimi Salo",
+      "nationality": "FI",
+      "role": "Support Rifler",
+      "attributes": {
+        "aim": 93,
+        "awp": 35,
+        "brain": 92,
+        "clutch": 92,
+        "entry": 88,
+        "utility": 91,
+        "movement": 91
+      },
+      "overall": 93
+    },
+    {
+      "id": 951,
+      "team_id": 190,
+      "nickname": "Spinx",
+      "real_name": "Lotan Giladi",
+      "nationality": "IL",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 96,
+        "awp": 40,
+        "brain": 93,
+        "clutch": 94,
+        "entry": 92,
+        "utility": 91,
+        "movement": 94
+      },
+      "overall": 95
+    }
+  ]
+},
+{
+  "id": 191,
+  "name": "FURIA",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "BR",
+  "team_tier": "A",
+  "roster": [
+    {
+      "id": 952,
+      "team_id": 191,
+      "nickname": "FalleN",
+      "real_name": "Gabriel Toledo",
+      "nationality": "BR",
+      "role": "IGL",
+      "attributes": {
+        "aim": 84,
+        "awp": 75,
+        "brain": 99,
+        "clutch": 92,
+        "entry": 70,
+        "utility": 97,
+        "movement": 80
+      },
+      "overall": 91
+    },
+    {
+      "id": 953,
+      "team_id": 191,
+      "nickname": "KSCERATO",
+      "real_name": "Kaike Cerato",
+      "nationality": "BR",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 97,
+        "awp": 40,
+        "brain": 96,
+        "clutch": 97,
+        "entry": 89,
+        "utility": 94,
+        "movement": 93
+      },
+      "overall": 96
+    },
+    {
+      "id": 954,
+      "team_id": 191,
+      "nickname": "yuurih",
+      "real_name": "Yuri Santos",
+      "nationality": "BR",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 95,
+        "awp": 35,
+        "brain": 93,
+        "clutch": 93,
+        "entry": 91,
+        "utility": 92,
+        "movement": 92
+      },
+      "overall": 94
+    },
+    {
+      "id": 955,
+      "team_id": 191,
+      "nickname": "YEKINDAR",
+      "real_name": "Mareks Gaļinskis",
+      "nationality": "LV",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 95,
+        "awp": 35,
+        "brain": 88,
+        "clutch": 88,
+        "entry": 99,
+        "utility": 84,
+        "movement": 96
+      },
+      "overall": 93
+    },
+    {
+      "id": 956,
+      "team_id": 191,
+      "nickname": "molodoy",
+      "real_name": "Danil Golubenko",
+      "nationality": "KZ",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 93,
+        "awp": 96,
+        "brain": 85,
+        "clutch": 89,
+        "entry": 82,
+        "utility": 80,
+        "movement": 92
+      },
+      "overall": 92
+    }
+  ]
+},
+{
+  "id": 192,
+  "name": "The MongolZ",
+  "year": 2025,
+  "cs_version": "CS2",
+  "country": "MN",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 957,
+      "team_id": 192,
+      "nickname": "bLitz",
+      "real_name": "Garidmagnai Byambasuren",
+      "nationality": "MN",
+      "role": "IGL",
+      "attributes": {
+        "aim": 86,
+        "awp": 30,
+        "brain": 97,
+        "clutch": 89,
+        "entry": 82,
+        "utility": 96,
+        "movement": 86
+      },
+      "overall": 90
+    },
+    {
+      "id": 958,
+      "team_id": 192,
+      "nickname": "Techno",
+      "real_name": "Sodbayar Munkhbold",
+      "nationality": "MN",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 91,
+        "awp": 35,
+        "brain": 89,
+        "clutch": 89,
+        "entry": 90,
+        "utility": 87,
+        "movement": 91
+      },
+      "overall": 91
+    },
+    {
+      "id": 959,
+      "team_id": 192,
+      "nickname": "mzinho",
+      "real_name": "Ayush Batbold",
+      "nationality": "MN",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 95,
+        "awp": 98,
+        "brain": 90,
+        "clutch": 93,
+        "entry": 85,
+        "utility": 85,
+        "movement": 95
+      },
+      "overall": 95
+    },
+    {
+      "id": 960,
+      "team_id": 192,
+      "nickname": "910",
+      "real_name": "Usukhbayar Banzragch",
+      "nationality": "MN",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 94,
+        "awp": 40,
+        "brain": 86,
+        "clutch": 86,
+        "entry": 98,
+        "utility": 82,
+        "movement": 96
+      },
+      "overall": 92
+    },
+    {
+      "id": 961,
+      "team_id": 192,
+      "nickname": "controlez",
+      "real_name": "Gan-Erdene Batbold",
+      "nationality": "MN",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 95,
+        "awp": 35,
+        "brain": 90,
+        "clutch": 92,
+        "entry": 93,
+        "utility": 88,
+        "movement": 95
+      },
+      "overall": 94
+    }
+  ]
+},
+{
+  "id": 193,
+  "name": "Team Spirit",
+  "year": 2026,
+  "cs_version": "CS2",
+  "country": "RU",
+  "team_tier": "S",
+  "roster": [
+    {
+  "id": 962,
+  "team_id": 193,
+  "nickname": "tN1R",
+  "real_name": "Andrey Tatarinovich",
+  "nationality": "BY",
+  "role": "Rifler",
+  "attributes": {
+    "aim": 93,
+    "awp": 35,
+    "brain": 89,
+    "clutch": 90,
+    "entry": 92,
+    "utility": 86,
+    "movement": 93
+  },
+  "overall": 92
+},
+    {
+      "id": 963,
+      "team_id": 193,
+      "nickname": "magixx",
+      "real_name": "Boris Vorobyev",
+      "nationality": "RU",
+      "role": "IGL",
+      "attributes": {
+        "aim": 90,
+        "awp": 35,
+        "brain": 92,
+        "clutch": 89,
+        "entry": 86,
+        "utility": 92,
+        "movement": 89
+      },
+      "overall": 90
+    },
+    {
+      "id": 964,
+      "team_id": 193,
+      "nickname": "zont1x",
+      "real_name": "Myroslav Plakhotia",
+      "nationality": "UA",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 94,
+        "awp": 40,
+        "brain": 93,
+        "clutch": 93,
+        "entry": 91,
+        "utility": 91,
+        "movement": 93
+      },
+      "overall": 94
+    },
+    {
+      "id": 965,
+      "team_id": 193,
+      "nickname": "donk",
+      "real_name": "Danil Kryshkovets",
+      "nationality": "RU",
+      "role": "Star Player / Entry Fragger",
+      "attributes": {
+        "aim": 100,
+        "awp": 65,
+        "brain": 99,
+        "clutch": 99,
+        "entry": 100,
+        "utility": 94,
+        "movement": 100
+      },
+      "overall": 100
+    },
+    {
+      "id": 966,
+      "team_id": 193,
+      "nickname": "sh1ro",
+      "real_name": "Dmitriy Sokolov",
+      "nationality": "RU",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 98,
+        "awp": 99,
+        "brain": 98,
+        "clutch": 99,
+        "entry": 80,
+        "utility": 93,
+        "movement": 94
+      },
+      "overall": 98
+    }
+  ]
+},
+{
+  "id": 194,
+  "name": "Team Vitality",
+  "year": 2026,
+  "cs_version": "CS2",
+  "country": "FR",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 967,
+      "team_id": 194,
+      "nickname": "apEX",
+      "real_name": "Dan Madesclaire",
+      "nationality": "FR",
+      "role": "IGL",
+      "attributes": {
+        "aim": 86,
+        "awp": 30,
+        "brain": 100,
+        "clutch": 90,
+        "entry": 84,
+        "utility": 99,
+        "movement": 85
+      },
+      "overall": 91
+    },
+    {
+      "id": 968,
+      "team_id": 194,
+      "nickname": "ZywOo",
+      "real_name": "Mathieu Herbaut",
+      "nationality": "FR",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 99,
+        "awp": 100,
+        "brain": 97,
+        "clutch": 99,
+        "entry": 93,
+        "utility": 96,
+        "movement": 96
+      },
+      "overall": 99
+    },
+    {
+      "id": 969,
+      "team_id": 194,
+      "nickname": "ropz",
+      "real_name": "Robin Kool",
+      "nationality": "EE",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 98,
+        "awp": 45,
+        "brain": 99,
+        "clutch": 100,
+        "entry": 91,
+        "utility": 96,
+        "movement": 97
+      },
+      "overall": 98
+    },
+    {
+      "id": 970,
+      "team_id": 194,
+      "nickname": "flameZ",
+      "real_name": "Shahar Shushan",
+      "nationality": "IL",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 96,
+        "awp": 35,
+        "brain": 90,
+        "clutch": 89,
+        "entry": 98,
+        "utility": 87,
+        "movement": 97
+      },
+      "overall": 95
+    },
+    {
+      "id": 971,
+      "team_id": 194,
+      "nickname": "mezii",
+      "real_name": "William Merriman",
+      "nationality": "GB",
+      "role": "Support Rifler",
+      "attributes": {
+        "aim": 91,
+        "awp": 35,
+        "brain": 92,
+        "clutch": 91,
+        "entry": 86,
+        "utility": 94,
+        "movement": 90
+      },
+      "overall": 92
+    }
+  ]
+},
+{
+  "id": 195,
+  "name": "Team Falcons",
+  "year": 2026,
+  "cs_version": "CS2",
+  "country": "SA",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 972,
+      "team_id": 195,
+      "nickname": "karrigan",
+      "real_name": "Finn Andersen",
+      "nationality": "DK",
+      "role": "IGL",
+      "attributes": {
+        "aim": 79,
+        "awp": 30,
+        "brain": 100,
+        "clutch": 88,
+        "entry": 73,
+        "utility": 99,
+        "movement": 81
+      },
+      "overall": 89
+    },
+    {
+      "id": 973,
+      "team_id": 195,
+      "nickname": "TeSeS",
+      "real_name": "René Madsen",
+      "nationality": "DK",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 90,
+        "awp": 35,
+        "brain": 89,
+        "clutch": 88,
+        "entry": 92,
+        "utility": 87,
+        "movement": 90
+      },
+      "overall": 88
+    },
+    {
+      "id": 974,
+      "team_id": 195,
+      "nickname": "NiKo",
+      "real_name": "Nikola Kovač",
+      "nationality": "BA",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 98,
+        "awp": 55,
+        "brain": 98,
+        "clutch": 97,
+        "entry": 95,
+        "utility": 90,
+        "movement": 90
+      },
+      "overall": 95
+    },
+    {
+      "id": 975,
+      "team_id": 195,
+      "nickname": "m0NESY",
+      "real_name": "Ilya Osipov",
+      "nationality": "RU",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 99,
+        "awp": 99,
+        "brain": 92,
+        "clutch": 97,
+        "entry": 88,
+        "utility": 89,
+        "movement": 100
+      },
+      "overall": 98
+    },
+    {
+      "id": 976,
+      "team_id": 195,
+      "nickname": "kyousuke",
+      "real_name": "Maksim Lukin",
+      "nationality": "RU",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 98,
+        "awp": 35,
+        "brain": 82,
+        "clutch": 88,
+        "entry": 90,
+        "utility": 84,
+        "movement": 94
+      },
+      "overall": 93
+    }
+  ]
+},
+{
+  "id": 196,
+  "name": "G2 Esports",
+  "year": 2026,
+  "cs_version": "CS2",
+  "country": "EU",
+  "team_tier": "S",
+  "roster": [
+    {
+      "id": 977,
+      "team_id": 196,
+      "nickname": "huNter-",
+      "real_name": "Nemanja Kovač",
+      "nationality": "BA",
+      "role": "IGL",
+      "attributes": {
+        "aim": 91,
+        "awp": 35,
+        "brain": 94,
+        "clutch": 91,
+        "entry": 86,
+        "utility": 92,
+        "movement": 89
+      },
+      "overall": 91
+    },
+    {
+      "id": 978,
+      "team_id": 196,
+      "nickname": "HeavyGod",
+      "real_name": "Nikita Martynenko",
+      "nationality": "IL",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 94,
+        "awp": 40,
+        "brain": 89,
+        "clutch": 89,
+        "entry": 93,
+        "utility": 86,
+        "movement": 94
+      },
+      "overall": 92
+    },
+    {
+      "id": 979,
+      "team_id": 196,
+      "nickname": "SunPayus",
+      "real_name": "Álvaro García",
+      "nationality": "ES",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 93,
+        "awp": 96,
+        "brain": 90,
+        "clutch": 91,
+        "entry": 78,
+        "utility": 86,
+        "movement": 91
+      },
+      "overall": 93
+    },
+    {
+      "id": 980,
+      "team_id": 196,
+      "nickname": "matys",
+      "real_name": "Matúš Šimko",
+      "nationality": "SK",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 92,
+        "awp": 35,
+        "brain": 84,
+        "clutch": 84,
+        "entry": 96,
+        "utility": 80,
+        "movement": 95
+      },
+      "overall": 89
+    },
+    {
+      "id": 981,
+      "team_id": 196,
+      "nickname": "NertZ",
+      "real_name": "Guy Iluz",
+      "nationality": "IL",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 92,
+        "awp": 35,
+        "brain": 90,
+        "clutch": 90,
+        "entry": 89,
+        "utility": 89,
+        "movement": 91
+      },
+      "overall": 91
+    }
+  ]
+},
+{
+  "id": 197,
+  "name": "FURIA",
+  "year": 2026,
+  "cs_version": "CS2",
+  "country": "BR",
+  "team_tier": "A",
+  "roster": [
+    {
+      "id": 982,
+      "team_id": 197,
+      "nickname": "FalleN",
+      "real_name": "Gabriel Toledo",
+      "nationality": "BR",
+      "role": "IGL",
+      "attributes": {
+        "aim": 80,
+        "awp": 72,
+        "brain": 99,
+        "clutch": 89,
+        "entry": 68,
+        "utility": 97,
+        "movement": 78
+      },
+      "overall": 88
+    },
+    {
+      "id": 983,
+      "team_id": 197,
+      "nickname": "KSCERATO",
+      "real_name": "Kaike Cerato",
+      "nationality": "BR",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 98,
+        "awp": 35,
+        "brain": 95,
+        "clutch": 98,
+        "entry": 88,
+        "utility": 93,
+        "movement": 91
+      },
+      "overall": 95
+    },
+    {
+      "id": 984,
+      "team_id": 197,
+      "nickname": "yuurih",
+      "real_name": "Yuri Santos",
+      "nationality": "BR",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 93,
+        "awp": 35,
+        "brain": 92,
+        "clutch": 92,
+        "entry": 89,
+        "utility": 91,
+        "movement": 90
+      },
+      "overall": 92
+    },
+    {
+      "id": 985,
+      "team_id": 197,
+      "nickname": "YEKINDAR",
+      "real_name": "Mareks Gaļinskis",
+      "nationality": "LV",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 93,
+        "awp": 35,
+        "brain": 85,
+        "clutch": 85,
+        "entry": 97,
+        "utility": 82,
+        "movement": 95
+      },
+      "overall": 91
+    },
+    {
+      "id": 986,
+      "team_id": 197,
+      "nickname": "molodoy",
+      "real_name": "Danil Golubenko",
+      "nationality": "KZ",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 91,
+        "awp": 94,
+        "brain": 84,
+        "clutch": 87,
+        "entry": 79,
+        "utility": 79,
+        "movement": 90
+      },
+      "overall": 93
+    }
+  ]
+},
+{
+  "id": 198,
+  "name": "Aurora Gaming",
+  "year": 2026,
+  "cs_version": "CS2",
+  "country": "TR",
+  "team_tier": "A",
+  "roster": [
+    {
+      "id": 987,
+      "team_id": 198,
+      "nickname": "MAJ3R",
+      "real_name": "Engin Küpeli",
+      "nationality": "TR",
+      "role": "IGL",
+      "attributes": {
+        "aim": 82,
+        "awp": 30,
+        "brain": 96,
+        "clutch": 86,
+        "entry": 76,
+        "utility": 95,
+        "movement": 80
+      },
+      "overall": 88
+    },
+    {
+      "id": 988,
+      "team_id": 198,
+      "nickname": "woxic",
+      "real_name": "Özgür Eker",
+      "nationality": "TR",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 91,
+        "awp": 95,
+        "brain": 87,
+        "clutch": 90,
+        "entry": 78,
+        "utility": 82,
+        "movement": 90
+      },
+      "overall": 91
+    },
+    {
+      "id": 989,
+      "team_id": 198,
+      "nickname": "XANTARES",
+      "real_name": "İsmailcan Dörtkardeş",
+      "nationality": "TR",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 98,
+        "awp": 45,
+        "brain": 91,
+        "clutch": 92,
+        "entry": 97,
+        "utility": 86,
+        "movement": 97
+      },
+      "overall": 95
+    },
+    {
+      "id": 990,
+      "team_id": 198,
+      "nickname": "Wicadia",
+      "real_name": "Ali Haydar Yalçın",
+      "nationality": "TR",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 92,
+        "awp": 35,
+        "brain": 84,
+        "clutch": 84,
+        "entry": 96,
+        "utility": 81,
+        "movement": 94
+      },
+      "overall": 89
+    },
+    {
+      "id": 991,
+      "team_id": 198,
+      "nickname": "soulfly",
+      "real_name": "Caner Kesici",
+      "nationality": "TR",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 89,
+        "awp": 35,
+        "brain": 85,
+        "clutch": 86,
+        "entry": 87,
+        "utility": 84,
+        "movement": 88
+      },
+      "overall": 87
+    }
+  ]
+},
+{
+  "id": 199,
+  "name": "BetBoom Team",
+  "year": 2026,
+  "cs_version": "CS2",
+  "country": "RU",
+  "team_tier": "A",
+  "roster": [
+    {
+      "id": 992,
+      "team_id": 199,
+      "nickname": "Boombl4",
+      "real_name": "Kirill Mikhailov",
+      "nationality": "RU",
+      "role": "IGL",
+      "attributes": {
+        "aim": 86,
+        "awp": 30,
+        "brain": 95,
+        "clutch": 88,
+        "entry": 82,
+        "utility": 94,
+        "movement": 84
+      },
+      "overall": 89
+    },
+    {
+      "id": 993,
+      "team_id": 199,
+      "nickname": "zorte",
+      "real_name": "Aleksandr Zagodyrenko",
+      "nationality": "RU",
+      "role": "AWPer",
+      "attributes": {
+        "aim": 92,
+        "awp": 95,
+        "brain": 87,
+        "clutch": 89,
+        "entry": 78,
+        "utility": 83,
+        "movement": 91
+      },
+      "overall": 91
+    },
+    {
+      "id": 994,
+      "team_id": 199,
+      "nickname": "Magnojez",
+      "real_name": "Sultan Lingaev",
+      "nationality": "RU",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 94,
+        "awp": 40,
+        "brain": 89,
+        "clutch": 91,
+        "entry": 93,
+        "utility": 86,
+        "movement": 94
+      },
+      "overall": 92
+    },
+    {
+      "id": 995,
+      "team_id": 199,
+      "nickname": "FL4MUS",
+      "real_name": "Vladislav Vasiliev",
+      "nationality": "RU",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 92,
+        "awp": 35,
+        "brain": 84,
+        "clutch": 85,
+        "entry": 96,
+        "utility": 80,
+        "movement": 94
+      },
+      "overall": 89
+    },
+    {
+      "id": 996,
+      "team_id": 199,
+      "nickname": "d1Ledez",
+      "real_name": "Daniil Kustov",
+      "nationality": "RU",
+      "role": "Support Rifler",
+      "attributes": {
+        "aim": 88,
+        "awp": 35,
+        "brain": 87,
+        "clutch": 87,
+        "entry": 84,
+        "utility": 88,
+        "movement": 87
+      },
+      "overall": 87
+    }
+  ]
+},
+{
+  "id": 200,
+  "name": "9z Team",
+  "year": 2026,
+  "cs_version": "CS2",
+  "country": "AR",
+  "team_tier": "A",
+  "roster": [
+    {
+      "id": 997,
+      "team_id": 200,
+      "nickname": "max",
+      "real_name": "Maximiliano Gonzalez",
+      "nationality": "UY",
+      "role": "IGL",
+      "attributes": {
+        "aim": 84,
+        "awp": 30,
+        "brain": 94,
+        "clutch": 87,
+        "entry": 79,
+        "utility": 93,
+        "movement": 84
+      },
+      "overall": 88
+    },
+    {
+      "id": 998,
+      "team_id": 200,
+      "nickname": "HUASOPEEK",
+      "real_name": "Matias Ibañez",
+      "nationality": "CL",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 91,
+        "awp": 94,
+        "brain": 86,
+        "clutch": 88,
+        "entry": 77,
+        "utility": 82,
+        "movement": 90
+      },
+      "overall": 90
+    },
+    {
+      "id": 999,
+      "team_id": 200,
+      "nickname": "meyern",
+      "real_name": "Ignacio Meyer",
+      "nationality": "AR",
+      "role": "Star Player / Rifler",
+      "attributes": {
+        "aim": 93,
+        "awp": 40,
+        "brain": 89,
+        "clutch": 91,
+        "entry": 91,
+        "utility": 87,
+        "movement": 92
+      },
+      "overall": 92
+    },
+    {
+      "id": 1000,
+      "team_id": 200,
+      "nickname": "luchov",
+      "real_name": "Luciano Herrera",
+      "nationality": "AR",
+      "role": "Entry Fragger",
+      "attributes": {
+        "aim": 90,
+        "awp": 35,
+        "brain": 84,
+        "clutch": 84,
+        "entry": 95,
+        "utility": 80,
+        "movement": 93
+      },
+      "overall": 88
+    },
+    {
+      "id": 1001,
+      "team_id": 200,
+      "nickname": "dgt",
+      "real_name": "Franco Garcia",
+      "nationality": "UY",
+      "role": "Rifler",
+      "attributes": {
+        "aim": 91,
+        "awp": 35,
+        "brain": 88,
+        "clutch": 89,
+        "entry": 88,
+        "utility": 87,
+        "movement": 90
+      },
+      "overall": 90
+    }
+  ]
+}
   ]
 }
