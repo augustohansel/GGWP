@@ -1,4 +1,3 @@
-/* src/pages/DraftPage.css */
 .draft-wrapper {
   background-color: #f3ecd8;
   color: #111;
@@ -79,3 +78,34 @@
 .btn-red { background: #e23b2d; color: white; }
 .btn-gold { background: #cda252; color: #111; }
 .btn-black { background: #111; color: white; }
+
+/* src/pages/DraftPage.css (Adicione no final do arquivo) */
+
+.team-roles-tracker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.role-badge {
+  background: #eee;
+  border: 2px solid #111;
+  color: #111;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Destaca o número de jogadores naquela função */
+.role-badge span {
+  background: #111;
+  color: #cda252;
+  padding: 2px 6px;
+  border-radius: 2px;
+}

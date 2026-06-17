@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import database from '../data/database.json';
 import type { Player, Database } from '../types';
-import { calculateUserTeamOverall, calculateDBTeamOverall, type Match, type TournamentTeam } from '../utils/tournamentUtils';
+import { calculateTeamOverall, type Match, type TournamentTeam } from '../utils/tournamentUtils';
 import { LiveMatch } from '../components/LiveMatch';
 import { PlayerCard } from '../components/PlayerCard'; 
 import './TournamentPage.css';
@@ -12,33 +12,48 @@ interface TournamentPageProps {
   onRestart: () => void;
 }
 
+// Time Fantasma para preencher as chaves futuras da árvore
+const TBD_TEAM: TournamentTeam = { id: 'tbd', name: 'TBD', isUser: false, overall: 0, roster: [] };
+
 export const TournamentPage: React.FC<TournamentPageProps> = ({ myTeam, onRestart }) => {
-  const [matches, setMatches] = useState<Match[]>([]);
-  const [roundName, setRoundName] = useState<string>("ROUND OF 16");
+  // Agora salvamos TODAS as rodadas de uma vez na Árvore
+  const [rounds, setRounds] = useState<Match[][]>([]);
+  const [currentRoundIndex, setCurrentRoundIndex] = useState<number>(0);
+  
   const [isGameOver, setIsGameOver] = useState<boolean>(false);
   const [champion, setChampion] = useState<TournamentTeam | null>(null);
-  
   const [activeUserMatch, setActiveUserMatch] = useState<Match | null>(null);
 
+  const roundNames = ["ROUND OF 16", "QUARTERFINALS", "SEMIFINALS", "GRAND FINAL"];
+  const roundName = roundNames[currentRoundIndex];
+
   useEffect(() => {
-    const userTeam: TournamentTeam = { id: 'user', name: 'YOUR DREAM TEAM', isUser: true, overall: calculateUserTeamOverall(myTeam), roster: myTeam };
+    const userStats = calculateTeamOverall(myTeam);
+    const userTeam: TournamentTeam = { 
+      id: 'user', name: 'YOUR DREAM TEAM', isUser: true, overall: userStats.overall, roster: myTeam, chemistryBreakdown: userStats.breakdown 
+    };
+    
     const allDBTeams = (database as Database).teams;
     const shuffledDB = [...allDBTeams].sort(() => 0.5 - Math.random());
     
-    const enemyTeams: TournamentTeam[] = shuffledDB.slice(0, 15).map(team => ({
-      id: team.id,
-      name: `${team.name} (${team.year})`,
-      isUser: false,
-      overall: calculateDBTeamOverall(team),
-      roster: team.roster 
-    }));
+    const enemyTeams: TournamentTeam[] = shuffledDB.slice(0, 15).map(team => {
+      const enemyStats = calculateTeamOverall(team.roster);
+      return { id: String(team.id), name: `${team.name} (${team.year})`, isUser: false, overall: enemyStats.overall, roster: team.roster };
+    });
 
     const tournamentTeams = [userTeam, ...enemyTeams].sort(() => 0.5 - Math.random());
-    const initialMatches: Match[] = [];
+    
+    // Geração Inicial da Árvore Completa
+    const r1: Match[] = [];
     for (let i = 0; i < tournamentTeams.length; i += 2) {
-      initialMatches.push({ id: `match-${i}`, team1: tournamentTeams[i], team2: tournamentTeams[i + 1] });
+      r1.push({ id: `r1-${i}`, team1: tournamentTeams[i], team2: tournamentTeams[i + 1] });
     }
-    setMatches(initialMatches);
+    
+    const r2: Match[] = Array(4).fill(null).map((_, i) => ({ id: `r2-${i}`, team1: TBD_TEAM, team2: TBD_TEAM }));
+    const r3: Match[] = Array(2).fill(null).map((_, i) => ({ id: `r3-${i}`, team1: TBD_TEAM, team2: TBD_TEAM }));
+    const r4: Match[] = Array(1).fill(null).map((_, i) => ({ id: `r4-${i}`, team1: TBD_TEAM, team2: TBD_TEAM }));
+
+    setRounds([r1, r2, r3, r4]);
   }, [myTeam]);
 
   const handlePlayUserMatch = (match: Match) => {
@@ -46,17 +61,19 @@ export const TournamentPage: React.FC<TournamentPageProps> = ({ myTeam, onRestar
   };
 
   const handleMatchFinish = (winner: TournamentTeam, loser: TournamentTeam, score: {t1: number, t2: number}) => {
-    setMatches(prevMatches => {
-      const updatedMatches = prevMatches.map(m => {
-        if (m.id === activeUserMatch?.id) {
-          return { ...m, winner, loser, score };
-        }
+    setRounds(prev => {
+      const newRounds = [...prev];
+      const currentMatches = [...newRounds[currentRoundIndex]];
+
+      const updatedMatches = currentMatches.map(m => {
+        if (m.id === activeUserMatch?.id) return { ...m, winner, loser, score };
         return m;
       });
 
-      return updatedMatches.map(m => {
-        if (m.winner) return m; 
-        const t1Wins = m.team1.overall + Math.random() * 10 >= m.team2.overall + Math.random() * 10;
+      // Simula as partidas dos Bots
+      newRounds[currentRoundIndex] = updatedMatches.map(m => {
+        if (m.winner || m.team1.id === 'tbd' || m.team2.id === 'tbd') return m; 
+        const t1Wins = m.team1.overall + Math.random() * 35 >= m.team2.overall + Math.random() * 35;
         return { 
           ...m, 
           winner: t1Wins ? m.team1 : m.team2, 
@@ -64,86 +81,64 @@ export const TournamentPage: React.FC<TournamentPageProps> = ({ myTeam, onRestar
           score: { t1: t1Wins ? 16 : 8, t2: t1Wins ? 8 : 16 } 
         };
       });
+
+      return newRounds;
     });
     
     if (loser.isUser) setIsGameOver(true);
-
-    if (activeUserMatch) {
-      setActiveUserMatch({ ...activeUserMatch, winner, loser, score });
-    }
+    if (activeUserMatch) setActiveUserMatch({ ...activeUserMatch, winner, loser, score });
   };
 
   const handleNextPhase = () => {
-    const winners = matches.map(match => match.winner as TournamentTeam);
-    
-    if (winners.length === 1) {
-      setChampion(winners[0]);
-      return;
-    }
+    setRounds(prev => {
+      const newRounds = [...prev];
+      const winners = newRounds[currentRoundIndex].map(m => m.winner as TournamentTeam);
+      
+      if (currentRoundIndex === 3) {
+        setChampion(winners[0]);
+        return prev;
+      }
 
-    const nextMatches: Match[] = [];
-    for (let i = 0; i < winners.length; i += 2) {
-      nextMatches.push({ id: `match-${roundName}-${i}`, team1: winners[i], team2: winners[i + 1] });
-    }
-    setMatches(nextMatches);
+      const nextRoundIdx = currentRoundIndex + 1;
+      const nextMatches = [...newRounds[nextRoundIdx]];
 
-    if (winners.length === 8) setRoundName("QUARTERFINALS");
-    if (winners.length === 4) setRoundName("SEMIFINALS");
-    if (winners.length === 2) setRoundName("GRAND FINAL");
+      // Joga os vencedores para a chave da próxima fase
+      for (let i = 0; i < winners.length; i += 2) {
+        nextMatches[i/2] = { ...nextMatches[i/2], team1: winners[i], team2: winners[i+1] };
+      }
+      
+      newRounds[nextRoundIdx] = nextMatches;
+      return newRounds;
+    });
+
+    if (currentRoundIndex < 3) setCurrentRoundIndex(prev => prev + 1);
   };
 
-  // --- TELA 1: CAMPEÃO (HALL DA FAMA) ---
+  // --- TELAS DE ESTADO (Campeão e Partida ao Vivo) continuam iguais ---
   if (champion) {
     return (
       <div className="tournament-wrapper">
         <div className="tournament-container" style={{ textAlign: 'center', paddingTop: '40px' }}>
-          <h1 className="bracket-title" style={{ color: '#cda252', fontSize: '80px', marginBottom: '10px' }}>
-            CHAMPION!
-          </h1>
-          <h2 style={{ fontSize: '40px', fontFamily: 'Anton', color: '#111', textTransform: 'uppercase', margin: 0, marginBottom: '20px' }}>
-            {champion.name}
-          </h2>
-          
-          {champion.isUser ? (
-            <p style={{ fontSize: '20px', fontWeight: 'bold', color: '#111', marginBottom: '40px' }}>
-              Your Dream Team made history and lifted the trophy!
-            </p>
-          ) : (
-            <p style={{ fontSize: '20px', fontWeight: 'bold', color: '#e23b2d', marginBottom: '40px' }}>
-              The AI took the trophy this time... Better luck next draft!
-            </p>
-          )}
-
+          <h1 className="bracket-title" style={{ color: '#cda252', fontSize: '80px', marginBottom: '10px' }}>CHAMPION!</h1>
+          <h2 style={{ fontSize: '40px', fontFamily: 'Anton', textTransform: 'uppercase', margin: 0, marginBottom: '20px' }}>{champion.name}</h2>
           <div className="card-grid" style={{ justifyContent: 'center', marginBottom: '50px' }}>
-            {champion.roster.map(player => (
-              <PlayerCard key={player.id} player={player} hideAction={true} />
-            ))}
+            {champion.roster.map(player => <PlayerCard key={player.id} player={player} hideAction={true} />)}
           </div>
-
-          <button className="btn-editorial btn-black" onClick={onRestart}>
-            PLAY AGAIN
-          </button>
+          <button className="btn-editorial btn-black" onClick={onRestart}>PLAY AGAIN</button>
         </div>
       </div>
     );
   }
 
-  // --- TELA 2: PARTIDA EM ANDAMENTO ---
   if (activeUserMatch) {
     const matchFinished = activeUserMatch.winner !== undefined;
     return (
       <div className="tournament-wrapper">
         <div className="tournament-container">
           <LiveMatch matchData={activeUserMatch} onMatchFinish={handleMatchFinish} />
-          
           {matchFinished && (
             <div style={{ textAlign: 'center', marginTop: '30px' }}>
-              <button 
-                className="btn-editorial btn-black" 
-                onClick={() => setActiveUserMatch(null)}
-              >
-                BACK TO BRACKET →
-              </button>
+              <button className="btn-editorial btn-black" onClick={() => setActiveUserMatch(null)}>BACK TO BRACKET →</button>
             </div>
           )}
         </div>
@@ -151,74 +146,117 @@ export const TournamentPage: React.FC<TournamentPageProps> = ({ myTeam, onRestar
     );
   }
 
-  // --- TELA 3: CHAVEAMENTO ---
-  const userMatch = matches.find(m => m.team1.isUser || m.team2.isUser);
-  const phaseCompleted = matches.every(m => m.winner !== undefined);
+  // Se os rounds ainda não carregaram
+  if (rounds.length === 0) return null;
 
+  const currentRoundMatches = rounds[currentRoundIndex];
+  const userMatch = currentRoundMatches?.find(m => m.team1.isUser || m.team2.isUser);
+  const myTournamentTeam = userMatch?.team1.isUser ? userMatch.team1 : userMatch?.team2.isUser ? userMatch.team2 : null;
+  const phaseCompleted = currentRoundMatches?.every(m => m.winner !== undefined);
+
+// --- TELA DA ÁRVORE DE CHAVEAMENTO ---
   return (
     <div className="tournament-wrapper">
       <div className="tournament-container">
-        <h1 className="bracket-title">BRACKET - {roundName}</h1>
         
+        {/* Painel de Química */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '20px' }}>
+          <h1 className="bracket-title" style={{ margin: 0 }}>{roundName}</h1>
+          {myTournamentTeam && !isGameOver && (
+            <div style={{ background: '#111', color: '#fff', padding: '10px 15px', border: '2px solid #e23b2d', fontFamily: 'Inter', maxWidth: '350px' }}>
+              <h3 style={{ fontFamily: 'Anton', margin: '0 0 5px 0', fontSize: '16px', color: '#cda252' }}>TEAM CHEMISTRY (OVR: {myTournamentTeam.overall})</h3>
+              <ul style={{ margin: 0, paddingLeft: '15px', fontSize: '11px' }}>
+                {myTournamentTeam.chemistryBreakdown?.map((item, i) => (
+                  <li key={i} style={{ color: item.startsWith('+') ? '#4caf50' : '#e23b2d' }}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+
         {isGameOver && (
-          <div style={{ textAlign: 'center', background: '#111', color: '#e23b2d', padding: '15px', border: '4px solid #e23b2d', marginBottom: '30px', boxShadow: '6px 6px 0px #e23b2d' }}>
-            <h2 style={{ fontFamily: 'Anton', fontSize: '30px', margin: 0, letterSpacing: '1px' }}>ELIMINATED</h2>
+          <div style={{ textAlign: 'center', background: '#111', color: '#e23b2d', padding: '15px', border: '4px solid #e23b2d', marginBottom: '20px' }}>
+            <h2 style={{ fontFamily: 'Anton', fontSize: '30px', margin: 0 }}>ELIMINATED</h2>
           </div>
         )}
 
-        <div style={{ marginTop: '30px' }}>
-          {matches.map(match => {
-            const isUserInvolved = match.team1.isUser || match.team2.isUser;
-            const t1IsWinner = match.winner?.id === match.team1.id;
-            const t2IsWinner = match.winner?.id === match.team2.id;
-            const hasWinner = match.winner !== undefined;
-
-            return (
-              <div key={match.id} className={`match-row ${isUserInvolved ? 'user-match' : ''}`}>
-                <div className={`team-name ${match.team1.isUser ? 'user' : ''} ${hasWinner ? (t1IsWinner ? 'winner' : 'loser') : ''}`} style={{ textAlign: 'right' }}>
-                  {match.team1.name}
-                </div>
-                
-                <div className="match-score">
-                  {match.score ? `${match.score.t1} - ${match.score.t2}` : 'VS'}
-                </div>
-
-                <div className={`team-name ${match.team2.isUser ? 'user' : ''} ${hasWinner ? (t2IsWinner ? 'winner' : 'loser') : ''}`} style={{ textAlign: 'left' }}>
-                  {match.team2.name}
-                </div>
-              </div>
-            );
-          })}
+        {/* --- CABEÇALHO DAS FASES (Tirado de dentro da coluna para não esmagar os slots) --- */}
+        <div className="bracket-labels">
+          {rounds.map((_, rIndex) => (
+            <div key={`label-${rIndex}`} className="bracket-label-wrapper">
+              <div className="bracket-col-label">{roundNames[rIndex]}</div>
+            </div>
+          ))}
         </div>
 
-        {/* --- BOTÕES DE PROGRESSÃO DINÂMICOS --- */}
-        <div style={{ textAlign: 'center', marginTop: '40px', display: 'flex', justifyContent: 'center', gap: '20px' }}>
-          
-          {/* Botão de Jogar */}
+        {/* --- A ÁRVORE VISUAL (BRACKET BOARD) --- */}
+        <div className="bracket-board">
+          {rounds.map((roundMatches, rIndex) => (
+            <div key={`col-${rIndex}`} className="bracket-col">
+
+              {roundMatches.map((match, mIndex) => {
+                const isUserInvolved = match.team1.isUser || match.team2.isUser;
+                const hasWinner = match.winner !== undefined;
+                const isDecided = rIndex === rounds.length - 1 && hasWinner;
+                const slotPosition = mIndex % 2 === 0 ? 'slot-top' : 'slot-bottom';
+
+                // Helpers de estilo
+                const getTeamClass = (team: TournamentTeam) => {
+                  if (team.id === 'tbd') return 'tbd-team';
+                  let cls = team.isUser ? 'user-team ' : '';
+                  if (hasWinner) cls += match.winner?.id === team.id ? 'winner' : 'loser';
+                  return cls;
+                };
+
+                return (
+                  <div key={match.id} className={`bracket-slot ${slotPosition} ${isUserInvolved ? 'user-slot' : ''}`}>
+                    <div className={`bracket-node ${isUserInvolved ? 'user-node' : ''} ${isDecided ? 'is-decided' : ''}`}>
+                      <span className="bracket-match-no">M{mIndex + 1}</span>
+
+                      <div className={`bracket-team ${getTeamClass(match.team1)}`}>
+                        <div className="bracket-team-info">
+                          <span className="bracket-team-name">{match.team1.name}</span>
+                          {match.team1.id !== 'tbd' && <span className="bracket-team-ovr">({match.team1.overall})</span>}
+                        </div>
+                        <div className="bracket-score">{match.score ? match.score.t1 : '-'}</div>
+                      </div>
+
+                      <div className="bracket-divider"></div>
+
+                      <div className={`bracket-team ${getTeamClass(match.team2)}`}>
+                        <div className="bracket-team-info">
+                          <span className="bracket-team-name">{match.team2.name}</span>
+                          {match.team2.id !== 'tbd' && <span className="bracket-team-ovr">({match.team2.overall})</span>}
+                        </div>
+                        <div className="bracket-score">{match.score ? match.score.t2 : '-'}</div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          ))}
+        </div>
+
+        {/* Botões de Ação */}
+        <div style={{ textAlign: 'center', marginTop: '20px', display: 'flex', justifyContent: 'center', gap: '20px' }}>
           {!phaseCompleted && userMatch && !isGameOver && !userMatch.winner && (
-            <button className="btn-editorial btn-red" onClick={() => handlePlayUserMatch(userMatch)}>
-              PLAY MY MATCH
-            </button>
+            <button className="btn-editorial btn-red" onClick={() => handlePlayUserMatch(userMatch)}>PLAY MY MATCH</button>
           )}
 
-          {/* Botões de Avançar de Fase */}
           {phaseCompleted && !isGameOver && (
             <button className="btn-editorial btn-black" onClick={handleNextPhase}>
-              {matches.length === 8 && "ADVANCE TO QUARTERFINALS →"}
-              {matches.length === 4 && "ADVANCE TO SEMIFINALS →"}
-              {matches.length === 2 && "ADVANCE TO GRAND FINAL →"}
-              {matches.length === 1 && "LIFT THE TROPHY 🏆"}
+              {currentRoundIndex === 0 && "ADVANCE TO QUARTERFINALS →"}
+              {currentRoundIndex === 1 && "ADVANCE TO SEMIFINALS →"}
+              {currentRoundIndex === 2 && "ADVANCE TO GRAND FINAL →"}
+              {currentRoundIndex === 3 && "LIFT THE TROPHY 🏆"}
             </button>
           )}
 
-          {/* Botão de Derrota */}
           {isGameOver && (
-            <button className="btn-editorial btn-red" onClick={onRestart}>
-              START NEW DRAFT
-            </button>
+            <button className="btn-editorial btn-red" onClick={onRestart}>START NEW DRAFT</button>
           )}
         </div>
-
       </div>
     </div>
   );

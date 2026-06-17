@@ -17,9 +17,7 @@
         { "id": 2, "team_id": 1, "nickname": "Potti", "real_name": "Tommy Ingemarsson", "nationality": "SE", "role": "Lurker / Rifler", "attributes": {   "aim": 97,   "awp": 60,   "brain": 98,   "clutch": 99,   "entry": 88,   "utility": 85,   "movement": 95 }, "overall": 96 },
         { "id": 3, "team_id": 1, "nickname": "ahl", "real_name": "Michael Korduner", "nationality": "SE", "role": "Support", "attributes": {   "aim": 88,   "awp": 50,   "brain": 88,   "clutch": 85,   "entry": 80,   "utility": 95,   "movement": 85 }, "overall": 87},
         { "id": 4, "team_id": 1, "nickname": "Medion", "real_name": "Jörgen Odenius", "nationality": "SE", "role": "Rifler / AWPer", "attributes": {   "aim": 90,   "awp": 85,   "brain": 85,   "clutch": 88,   "entry": 85,   "utility": 85,   "movement": 88 }, "overall": 89},
-        { "id": 5, "team_id": 1, "nickname": "vesslan", "real_name": "Johan Ryman", "nationality": "SE", "role": "IGL / AWPer", "attributes": {   "aim": 85,   "awp": 88,   "brain": 98,   "clutch": 88,   "entry": 80,   "utility": 90,   "movement": 85 }, "overall": 88 },
-        { "id": 6, "team_id": 1, "nickname": "Hyb", "real_name": "Marcus Håkansson", "nationality": "SE", "role": "AWPer", "attributes": {   "aim": 88,   "awp": 95,   "brain": 85,   "clutch": 85,   "entry": 82,   "utility": 80,   "movement": 84 }, "overall": 89}
-      ]
+        { "id": 5, "team_id": 1, "nickname": "vesslan", "real_name": "Johan Ryman", "nationality": "SE", "role": "IGL / AWPer", "attributes": {   "aim": 85,   "awp": 88,   "brain": 98,   "clutch": 88,   "entry": 80,   "utility": 90,   "movement": 85 }, "overall": 88 }      ]
     },
     {
     "id": 2,

@@ -1,11 +1,11 @@
+/* src/components/PlayerCard.css */
+
 .player-card {
   border: 3px solid #111;
   background: #fff;
   color: #111;
-  
-  flex: 0 1 200px; /* 0 = Não cresce, 1 = Pode encolher, 200px = Tamanho ideal */
-  min-width: 170px; /* Se a tela for pequena, encolhe no máximo até aqui */
-  
+  flex: 0 1 200px;
+  min-width: 170px;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -25,6 +25,7 @@
   transform: translate(6px, 6px);
 }
 
+/* --- HEADER DA CARTINHA --- */
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -32,6 +33,7 @@
   border-bottom: 2px solid #111;
   padding-bottom: 8px;
   margin-bottom: 12px;
+  gap: 10px; /* Garante um respiro entre o Overall e o Nome */
 }
 
 .overall {
@@ -39,6 +41,24 @@
   font-size: 32px;
   color: #e23b2d;
   line-height: 1;
+  flex-shrink: 0; /* Impede o número de ser esmagado */
+}
+
+.name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-end;
+  min-width: 0; /* O segredo pro texto não vazar o container no Flexbox */
+  flex: 1;
+}
+
+.player-flag {
+  width: 20px;
+  height: 15px;
+  object-fit: cover;
+  border-radius: 2px;
+  flex-shrink: 0; /* Impede a bandeira de ser esmagada */
 }
 
 .card-header h3 {
@@ -47,23 +67,49 @@
   font-size: 16px;
   text-transform: uppercase;
   text-align: right;
+  
+  /* A MÁGICA QUE RESOLVE NOMES GIGANTES: */
+  white-space: nowrap; /* Proíbe de quebrar pra linha de baixo */
+  overflow: hidden; /* Esconde o que vazar */
+  text-overflow: ellipsis; /* Adiciona os "..." no fim do nome */
 }
 
-.card-body .role {
+/* --- CORPO DA CARTINHA --- */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-tags {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+}
+
+.role-tag {
   font-weight: 800;
-  font-size: 12px;
-  background: #cda252;
+  font-size: 11px;
   display: inline-block;
   padding: 2px 6px;
   border: 1px solid #111;
-  margin: 5px 0px 15px 0px;
+  background: #cda252;
+  color: #111;
 }
 
-.card-body .team-info {
+.team-info {
   font-size: 12px;
-  color: #555;
-  font-weight: 600;
+  color: #333;
+  font-weight: 700;
   margin: 0 0 15px 0;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-year {
+  color: #888;
+  font-weight: 800;
 }
 
 .attributes {
@@ -74,8 +120,10 @@
   border-top: 1px dashed #ccc;
   padding-top: 10px;
   margin-bottom: 15px;
+  margin-top: auto;
 }
 
+/* --- BOTÃO DE AÇÃO --- */
 .player-btn {
   background: #111;
   color: #fff;
@@ -86,6 +134,7 @@
   padding: 10px;
   cursor: pointer;
   transition: background 0.2s;
+  width: 100%;
 }
 
 .player-btn:hover:not(:disabled) {

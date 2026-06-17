@@ -17,7 +17,10 @@ export const DraftPage: React.FC<DraftPageProps> = ({ myTeam, setMyTeam, onFinis
   const [rerolls, setRerolls] = useState<number>(1);
 
   const getRandomTeam = () => allTeams[Math.floor(Math.random() * allTeams.length)];
-  const handleDrawTeam = () => setDrawnTeam(getRandomTeam());
+  
+  const handleDrawTeam = () => {
+    setDrawnTeam(getRandomTeam());
+  };
 
   const handleReroll = () => {
     if (rerolls > 0) {
@@ -35,14 +38,23 @@ export const DraftPage: React.FC<DraftPageProps> = ({ myTeam, setMyTeam, onFinis
       alert("Player already in your team!");
       return;
     }
+    
     const pickedPlayer = { ...player, team_name: drawnTeam?.name, year: drawnTeam?.year };
     setMyTeam(prev => [...prev, pickedPlayer]);
     setDrawnTeam(null);
-    // REMOVIDO: setRerolls(1); - Agora o Reroll não reseta mais por rodada!
   };
 
   const isTeamFull = myTeam.length === 5;
   const isRoundActive = drawnTeam !== null;
+
+  // --- RASTREADOR DE FUNÇÕES SEPARADAS ---
+  const roleCounts = myTeam.reduce((acc, player) => {
+    const individualRoles = player.role.split('/').map(r => r.trim().toUpperCase());
+    individualRoles.forEach(role => {
+      acc[role] = (acc[role] || 0) + 1;
+    });
+    return acc;
+  }, {} as Record<string, number>);
 
   return (
     <div className="draft-wrapper">
@@ -51,7 +63,22 @@ export const DraftPage: React.FC<DraftPageProps> = ({ myTeam, setMyTeam, onFinis
         
         <section className="draft-section">
           <div className="section-header">
-            <h2 className="section-title">YOUR ROSTER ({myTeam.length}/5)</h2>
+            <div>
+              <h2 className="section-title" style={{ marginBottom: '5px' }}>
+                YOUR ROSTER ({myTeam.length}/5)
+              </h2>
+              
+              {myTeam.length > 0 && (
+                <div className="team-roles-tracker">
+                  {Object.entries(roleCounts).map(([role, count]) => (
+                    <div key={role} className="role-badge">
+                      {role} <span>{count}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {isTeamFull && (
               <button className="btn-editorial btn-red" onClick={onFinishDraft}>
                 START TOURNAMENT →
