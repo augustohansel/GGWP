@@ -159,17 +159,47 @@ export const TournamentPage: React.FC<TournamentPageProps> = ({ myTeam, onRestar
     <div className="tournament-wrapper">
       <div className="tournament-container">
         
-        {/* Painel de Química */}
+        {/* Painel de Química NOVO DESIGN */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '20px' }}>
           <h1 className="bracket-title" style={{ margin: 0 }}>{roundName}</h1>
+          
           {myTournamentTeam && !isGameOver && (
-            <div style={{ background: '#111', color: '#fff', padding: '10px 15px', border: '2px solid #e23b2d', fontFamily: 'Inter', maxWidth: '350px' }}>
-              <h3 style={{ fontFamily: 'Anton', margin: '0 0 5px 0', fontSize: '16px', color: '#cda252' }}>TEAM CHEMISTRY (OVR: {myTournamentTeam.overall})</h3>
-              <ul style={{ margin: 0, paddingLeft: '15px', fontSize: '11px' }}>
-                {myTournamentTeam.chemistryBreakdown?.map((item, i) => (
-                  <li key={i} style={{ color: item.startsWith('+') ? '#4caf50' : '#e23b2d' }}>{item}</li>
-                ))}
-              </ul>
+            <div className="chemistry-panel">
+              {/* O Quadro Vermelho do OVR */}
+              <div className="chemistry-ovr-box">
+                <span className="chemistry-ovr-label">TEAM OVR</span>
+                <span className="chemistry-ovr-value">{myTournamentTeam.overall}</span>
+              </div>
+              
+              {/* A Lista de Status */}
+              <div className="chemistry-details">
+                <h3 className="chemistry-title">CHEMISTRY REPORT</h3>
+                <div className="chemistry-list">
+                  
+                  {myTournamentTeam.chemistryBreakdown?.map((item, i) => {
+                    const isPositive = item.startsWith('+');
+                    // Separa o número (ex: "+5") do texto (ex: "Perfect Comms")
+                    const [value, ...textParts] = item.split(':');
+                    const text = textParts.join(':').trim();
+                    
+                    return (
+                      <div key={i} className="chemistry-item">
+                        <span className={`chemistry-badge ${isPositive ? 'positive' : 'negative'}`}>
+                          {value}
+                        </span>
+                        {text}
+                      </div>
+                    );
+                  })}
+
+                  {myTournamentTeam.chemistryBreakdown?.length === 0 && (
+                    <div className="chemistry-item" style={{ color: '#888' }}>
+                      No chemistry bonuses applied.
+                    </div>
+                  )}
+
+                </div>
+              </div>
             </div>
           )}
         </div>

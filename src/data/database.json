@@ -4546,7 +4546,7 @@
       "role": "IGL",
       "attributes": {
         "aim": 84,
-        "awp": 75,
+        "awp": 90,
         "brain": 98,
         "clutch": 91,
         "entry": 70,
@@ -4581,7 +4581,7 @@
       "nationality": "BR",
       "role": "Rifler",
       "attributes": {
-        "aim": 95,
+        "aim": 93,
         "awp": 35,
         "brain": 92,
         "clutch": 92,
@@ -4589,7 +4589,7 @@
         "utility": 91,
         "movement": 92
       },
-      "overall": 94
+      "overall": 92
     },
     {
       "id": 890,
@@ -4623,9 +4623,9 @@
         "clutch": 88,
         "entry": 82,
         "utility": 79,
-        "movement": 91
+        "movement": 93
       },
-      "overall": 91
+      "overall": 93
     }
   ]
 },
