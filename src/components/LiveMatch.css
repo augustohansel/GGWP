@@ -33,3 +33,23 @@
 
 @keyframes slideUp { 0% { opacity: 0; transform: translateY(5px); } 100% { opacity: 1; transform: translateY(0); } }
 @keyframes acePop { 0% { opacity: 0; transform: translateY(10px) scale(0.5); } 50% { transform: translateY(-5px) scale(1.3); } 100% { opacity: 1; transform: translateY(0) scale(1); } }
+
+/* --- DESTAQUE DO MVP DA PARTIDA --- */
+.mvp-row td {
+  background-color: rgba(205, 162, 82, 0.15) !important; /* Fundo levemente dourado */
+}
+
+.mvp-star {
+  color: #cda252;
+  margin-right: 8px;
+  font-size: 14px;
+  text-shadow: 1px 1px 0px #111;
+  display: inline-block;
+  animation: pulseStar 1.5s infinite;
+}
+
+@keyframes pulseStar {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}

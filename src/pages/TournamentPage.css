@@ -329,3 +329,59 @@
 
 .chemistry-badge.positive { background: #4caf50; color: #111; }
 .chemistry-badge.negative { background: #e23b2d; color: #fff; }
+
+/* --- PATH TO GLORY (TIMES DERROTADOS) --- */
+.path-to-glory {
+  background: #111;
+  border: 3px solid #333;
+  padding: 20px;
+  margin: 0 auto 40px auto;
+  max-width: 600px;
+  text-align: left;
+  animation: slideDown 1s ease-out;
+}
+
+.path-title {
+  font-family: 'Anton', sans-serif;
+  color: #cda252;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.path-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.path-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 10px 15px;
+  border-left: 4px solid #e23b2d;
+}
+
+.path-phase {
+  font-size: 12px;
+  color: #888;
+  font-weight: 800;
+  width: 130px;
+}
+
+.path-enemy {
+  font-weight: 800;
+  color: #fff;
+  flex: 1;
+}
+
+.path-score {
+  font-family: 'Anton', sans-serif;
+  color: #cda252;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
