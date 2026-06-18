@@ -21,7 +21,6 @@ export const PlayerCard: React.FC<PlayerCardProps> = ({
       <div className="card-header">
         <span className="overall">{player.overall}</span>
         
-        {/* NOME + BANDEIRA: Agora eles moram juntos aqui em cima! */}
         <div className="name-wrapper">
           {player.nationality && (
             <img 
@@ -47,10 +46,14 @@ export const PlayerCard: React.FC<PlayerCardProps> = ({
           <span>{player.team_name}</span> 
           <span className="team-year">{player.year}</span>
         </p>
-
         <div className="attributes">
-          <span>AIM: {player.attributes.aim}</span>
-          <span>BRN: {player.attributes.brain}</span>
+          <span>AIM {player.attributes.aim}</span>
+          <span>AWP {player.attributes.awp}</span>
+          <span>IQ {player.attributes.brain}</span>
+          <span>CLT {player.attributes.clutch}</span>
+          <span>ENT {player.attributes.entry}</span>
+          <span>UTL {player.attributes.utility}</span>
+          <span>MOV {player.attributes.movement}</span>
         </div>
       </div>
       

@@ -3121,7 +3121,7 @@
     },
     {
       "id": 135,
-      "name": "FURIA Esports",
+      "name": "FURIA",
       "year": 2021,
       "cs_version": "CS:GO",
       "country": "BR",
@@ -3196,7 +3196,7 @@
     },
     {
       "id": 140,
-      "name": "FURIA Esports",
+      "name": "FURIA",
       "year": 2022,
       "cs_version": "CS:GO",
       "country": "BR",
@@ -3316,7 +3316,7 @@
     },
     {
       "id": 148,
-      "name": "FURIA Esports",
+      "name": "FURIA",
       "year": 2022,
       "cs_version": "CS:GO",
       "country": "BR",
@@ -5196,7 +5196,7 @@
       "team_id": 184,
       "nickname": "dav1deuS",
       "real_name": "David Tapia",
-      "nationality": "BR",
+      "nationality": "CL",
       "role": "Rifler",
       "attributes": {
         "aim": 89,
@@ -6079,7 +6079,7 @@
       "nickname": "mzinho",
       "real_name": "Ayush Batbold",
       "nationality": "MN",
-      "role": "AWPer",
+      "role": "Rifler",
       "attributes": {
         "aim": 95,
         "awp": 98,
@@ -6089,7 +6089,7 @@
         "utility": 85,
         "movement": 95
       },
-      "overall": 95
+      "overall": 90
     },
     {
       "id": 960,
@@ -6097,7 +6097,7 @@
       "nickname": "910",
       "real_name": "Usukhbayar Banzragch",
       "nationality": "MN",
-      "role": "Entry Fragger",
+      "role": "Star Player / AWPer",
       "attributes": {
         "aim": 94,
         "awp": 40,
@@ -6107,7 +6107,7 @@
         "utility": 82,
         "movement": 96
       },
-      "overall": 92
+      "overall": 91
     },
     {
       "id": 961,
@@ -6125,7 +6125,7 @@
         "utility": 88,
         "movement": 95
       },
-      "overall": 94
+      "overall": 88
     }
   ]
 },
@@ -6189,7 +6189,7 @@
         "utility": 91,
         "movement": 93
       },
-      "overall": 94
+      "overall": 90
     },
     {
       "id": 965,
@@ -6217,15 +6217,15 @@
       "nationality": "RU",
       "role": "AWPer",
       "attributes": {
-        "aim": 98,
-        "awp": 99,
-        "brain": 98,
-        "clutch": 99,
+        "aim": 90,
+        "awp": 95,
+        "brain": 92,
+        "clutch": 90,
         "entry": 80,
-        "utility": 93,
-        "movement": 94
+        "utility": 60,
+        "movement": 90
       },
-      "overall": 98
+      "overall": 94
     }
   ]
 },

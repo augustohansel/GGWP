@@ -41,8 +41,22 @@ export const LiveMatch: React.FC<LiveMatchProps> = ({ matchData, onMatchFinish }
     const currentTarget = getTargetScore(score.t1, score.t2);
     if (score.t1 === currentTarget || score.t2 === currentTarget) return;
 
-    const t1Weight = team1.overall + Math.floor(Math.random() * 35);
-    const t2Weight = team2.overall + Math.floor(Math.random() * 35);
+    // --- 1. O MOTOR DE DESEMPENHO INDIVIDUAL ---
+    // Puxa o bônus de Química da equipe (OVR do time - Média dos jogadores)
+    const t1BaseAvg = team1.roster.reduce((sum, p) => sum + p.overall, 0) / team1.roster.length;
+    const t1ChemBonus = team1.overall - t1BaseAvg;
+
+    const t2BaseAvg = team2.roster.reduce((sum, p) => sum + p.overall, 0) / team2.roster.length;
+    const t2ChemBonus = team2.overall - t2BaseAvg;
+
+    // Cada jogador rola os seus próprios dados de partida (OVR + Fator Sorte)
+    const t1Performances = team1.roster.map(p => ({ player: p, score: p.overall + Math.floor(Math.random() * 40) }));
+    const t2Performances = team2.roster.map(p => ({ player: p, score: p.overall + Math.floor(Math.random() * 40) }));
+
+    // A vitória do round é a SOMA do esforço individual + Química
+    const t1Weight = t1Performances.reduce((sum, p) => sum + p.score, 0) + (t1ChemBonus * 5);
+    const t2Weight = t2Performances.reduce((sum, p) => sum + p.score, 0) + (t2ChemBonus * 5);
+
     const t1Wins = t1Weight >= t2Weight;
 
     const newScore = {
@@ -52,11 +66,11 @@ export const LiveMatch: React.FC<LiveMatchProps> = ({ matchData, onMatchFinish }
     setScore(newScore);
     setRoundHistory(prev => [...prev, t1Wins ? 't1' : 't2']);
 
-    const winnerRoster = t1Wins ? team1.roster : team2.roster;
-    const loserRoster = t1Wins ? team2.roster : team1.roster;
+    const winnerPerformances = t1Wins ? t1Performances : t2Performances;
+    const loserPerformances = t1Wins ? t2Performances : t1Performances;
 
-    const winnerKillsCount = Math.floor(Math.random() * 2) + 4; // 4 ou 5
-    const loserKillsCount = Math.floor(Math.random() * 5); // 0 a 4
+    const winnerKillsCount = Math.floor(Math.random() * 2) + 4; // Vencedor mata 4 ou 5
+    const loserKillsCount = Math.floor(Math.random() * 5); // Perdedor mata de 0 a 4
 
     const newStats: Record<string | number, PlayerStats> = {};
     Object.keys(stats).forEach(id => newStats[id] = { ...stats[id] });
@@ -64,27 +78,58 @@ export const LiveMatch: React.FC<LiveMatchProps> = ({ matchData, onMatchFinish }
     const currentDiffs: Record<string | number, PlayerStats> = {};
     Object.keys(stats).forEach(id => currentDiffs[id] = { k: 0, a: 0, d: 0 });
 
-    // 1. SORTEAR VÍTIMAS ÚNICAS
-    const loserVictims = [...loserRoster].sort(() => 0.5 - Math.random()).slice(0, winnerKillsCount);
+    // --- 2. QUEM MORRE? (Os piores do round tomam o tiro) ---
+    // Ordenamos os jogadores do pior score para o melhor
+    const sortedLosers = [...loserPerformances].sort((a, b) => a.score - b.score);
+    const loserVictims = sortedLosers.slice(0, winnerKillsCount).map(p => p.player);
     loserVictims.forEach(v => { newStats[v.id].d++; currentDiffs[v.id].d++; });
 
-    const winnerVictims = [...winnerRoster].sort(() => 0.5 - Math.random()).slice(0, loserKillsCount);
+    const sortedWinners = [...winnerPerformances].sort((a, b) => a.score - b.score);
+    const winnerVictims = sortedWinners.slice(0, loserKillsCount).map(p => p.player);
     winnerVictims.forEach(v => { newStats[v.id].d++; currentDiffs[v.id].d++; });
 
-    // 2. DISTRIBUIR KILLS/ASSISTS
-    const distributeKills = (roster: Player[], kills: number) => {
+    // --- 3. QUEM MATA? (Sorteio ponderado para os melhores) ---
+    const distributeKills = (performances: {player: Player, score: number}[], kills: number) => {
       for (let i = 0; i < kills; i++) {
-        const killer = roster[Math.floor(Math.random() * roster.length)];
+        // Quem tem o maior Score domina o sorteio (Elevado ao quadrado para dar mais peso aos craques)
+        const totalWeight = performances.reduce((sum, p) => sum + Math.pow(p.score, 2), 0);
+        let rand = Math.random() * totalWeight;
+        let killer = performances[0].player;
+        
+        for (const p of performances) {
+          if (rand < Math.pow(p.score, 2)) {
+            killer = p.player;
+            break;
+          }
+          rand -= Math.pow(p.score, 2);
+        }
+
         newStats[killer.id].k++;
         currentDiffs[killer.id].k++;
+
+        // Sorteio das Assistências
         if (Math.random() > 0.5) {
-          const assister = roster[Math.floor(Math.random() * roster.length)];
-          if (assister.id !== killer.id) { newStats[assister.id].a++; currentDiffs[assister.id].a++; }
+          const possibleAssisters = performances.filter(p => p.player.id !== killer.id);
+          if (possibleAssisters.length > 0) {
+            const assistWeight = possibleAssisters.reduce((sum, p) => sum + Math.pow(p.score, 2), 0);
+            let aRand = Math.random() * assistWeight;
+            let assister = possibleAssisters[0].player;
+            for (const p of possibleAssisters) {
+              if (aRand < Math.pow(p.score, 2)) {
+                assister = p.player;
+                break;
+              }
+              aRand -= Math.pow(p.score, 2);
+            }
+            newStats[assister.id].a++;
+            currentDiffs[assister.id].a++;
+          }
         }
       }
     };
-    distributeKills(winnerRoster, winnerKillsCount);
-    distributeKills(loserRoster, loserKillsCount);
+
+    distributeKills(winnerPerformances, winnerKillsCount);
+    distributeKills(loserPerformances, loserKillsCount);
     
     setStats(newStats);
     setLastRoundDiffs(currentDiffs);
@@ -128,24 +173,47 @@ export const LiveMatch: React.FC<LiveMatchProps> = ({ matchData, onMatchFinish }
     );
   };
 
-  const matchFinished = score.t1 === getTargetScore(score.t1, score.t2) || score.t2 === getTargetScore(score.t1, score.t2);
+  const currentTarget = getTargetScore(score.t1, score.t2);
+  const matchFinished = score.t1 === currentTarget || score.t2 === currentTarget;
+  
+  const isOT = score.t1 >= 15 && score.t2 >= 15;
+  const otLevel = isOT ? Math.floor((Math.min(score.t1, score.t2) - 15) / 3) + 1 : 0;
+  const matchStatusText = matchFinished ? "MATCH OVER!" : (isOT ? `OVERTIME ${otLevel}` : "Match in Progress");
+
   const t1Color = team1.isUser ? '#e23b2d' : '#111';
   const t2Color = team2.isUser ? '#e23b2d' : '#111';
 
   return (
     <div className="live-match-board">
       <div style={{ textAlign: 'center' }}>
+        
+        <h2 style={{ fontFamily: 'Anton', textTransform: 'uppercase', margin: 0, color: isOT && !matchFinished ? '#e23b2d' : '#888', letterSpacing: '1px' }}>
+          {matchStatusText}
+        </h2>
+        
         <div className="score-display">
           <h1 className="score-number" style={{ color: t1Color }}>{score.t1}</h1>
           <span className="score-divider">-</span>
           <h1 className="score-number" style={{ color: t2Color }}>{score.t2}</h1>
         </div>
+        
         <div className="round-history">
-          {roundHistory.map((winner, idx) => <div key={idx} className="history-dot" style={{ background: winner === 't1' ? t1Color : t2Color }} />)}
+          {roundHistory.map((winner, idx) => (
+            <div key={idx} className="history-dot" style={{ background: winner === 't1' ? t1Color : t2Color }} title={`Round ${idx + 1}`} />
+          ))}
         </div>
-        {!matchFinished && <button className="btn-editorial btn-red" onClick={playRound}>PLAY NEXT ROUND</button>}
+        
+        {!matchFinished && (
+           <button className={`btn-editorial ${isOT ? 'btn-black' : 'btn-red'}`} onClick={playRound}>
+             {isOT ? 'PLAY OT ROUND' : 'PLAY NEXT ROUND'}
+           </button>
+        )}
       </div>
-      <div className="tab-tables">{renderTeamTAB(team1)}{renderTeamTAB(team2)}</div>
+      
+      <div className="tab-tables">
+        {renderTeamTAB(team1)}
+        {renderTeamTAB(team2)}
+      </div>
     </div>
   );
 };
