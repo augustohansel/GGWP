@@ -1,73 +1,36 @@
-# React + TypeScript + Vite
+# 🏆 CS:GO Dream Team Simulator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um simulador de Draft e Torneio de Counter-Strike construído em React! Monte o seu "Dream Team" com lendas do CS (passado e presente), maximize a química da equipe e lute pelo troféu de um Major contra os maiores times da história.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades (Features)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*   **Draft Estratégico:** Escolha 5 jogadores a partir de um banco de dados rico. Monte a sua equipe equilibrando funções vitais como *IGL*, *AWPer*, *Entry Fragger*, *Support* e *Lurker*.
+*   **Motor de Química (Chemistry Engine):** O Overall (OVR) do seu time não é apenas a média das notas! Ganhe bônus de performance ao juntar jogadores da mesma nacionalidade, da mesma era ou com funções bem distribuídas.
+*   **Chaveamento de Major (Bracket System):** O seu time é inserido num torneio de eliminação simples com 16 equipes (Oitavas, Quartas, Semis e Final). Oponentes e chaves são gerados aleatoriamente a cada nova jogatina, com um sistema Anti-Clone (evita organizações repetidas).
+*   **Simulação de Partidas ao Vivo:** Assista ao seu time jogar round a round! O motor do jogo calcula abates, assistências e mortes usando:
+    *   *Performance Individual:* Jogadores com OVR maior têm mais chances de brilhar e puxar kills.
+    *   *Mecânicas Reais:* Ninguém morre duas vezes no mesmo round, e mortes/kills batem matematicamente entre as equipes.
+    *   *Destaques:* Alertas visuais e coloridos para Multi-kills (Double, Triple, Quad) e o tão sonhado **ACE Dourado**!
+    *   *Match MVP:* O "Top Fragger" da partida é coroado com uma estrela de MVP no placar final.
+*   **Path to Glory (Caminho da Glória):** Uma tela de campeão gloriosa que exibe a sua escalação, o troféu e o histórico completo dos times que você amassou para chegar ao título.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Screenshots
 
-## Expanding the ESLint configuration
+### 1. Tela de Draft & Química
+<img width="1000" height="896" alt="image" src="https://github.com/user-attachments/assets/f5781538-e2fa-47b5-8adf-ad69669a713b" />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 2. A Árvore do Torneio (Bracket)
+<img width="995" height="1227" alt="image" src="https://github.com/user-attachments/assets/b89452f2-74f0-4791-9f3e-842251c16e03" />
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 3. Partida ao Vivo (Live Match)
+<img width="999" height="612" alt="image" src="https://github.com/user-attachments/assets/de981da6-fa43-4115-8d72-aa96425b89f8" />
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Tecnologias Utilizadas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*   **React (com TypeScript)** - Estrutura principal da aplicação e componentes.
+*   **CSS Puro / Flexbox / CSS Grid** - Estilização customizada focada em uma interface sombria, limpa e responsiva (estética e-sports).
+*   **JSON Data** - Banco de dados local para armazenar times, jogadores e atributos.
