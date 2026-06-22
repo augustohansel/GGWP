@@ -1,4 +1,4 @@
-# 🏆 CS:GO Dream Team Simulator
+# 🏆 Counter Strike Dream Team Simulator
 
 Um simulador de Draft e Torneio de Counter-Strike construído em React! Monte o seu "Dream Team" com lendas do CS (passado e presente), maximize a química da equipe e lute pelo troféu de um Major contra os maiores times da história.
 
